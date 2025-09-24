@@ -17,7 +17,7 @@ audRole: a skos:ConceptScheme ;
   dct:license <http://creativecommons.org/licenses/by/4.0/> ;
   skos:hasTopConcept
     audRole:administrator,
-    audRole:generalPublic,
+    audRole:generalpublic,
     audRole:mentor,
     audRole:parent,
     audRole:professional,
@@ -30,7 +30,7 @@ audRole:administrator a skos:Concept ;
   skos:definition "A trainer or educator with administrative authority and responsibility."@en ;
   skos:inScheme audRole: .
 
-audRole:generalPublic a skos:Concept ;
+audRole:generalpublic a skos:Concept ;
   skos:prefLabel "general public"@en ;
   skos:definition "The public at large."@en ;
   skos:inScheme audRole: .
@@ -45,7 +45,7 @@ audRole:parent a skos:Concept ;
   skos:definition "A father, mother, or legal guardian."@en ;
   skos:inScheme audRole: .
 
-audRole:peerTutor a skos:Concept ;
+audRole:peertutor a skos:Concept ;
   skos:prefLabel "peer tutor"@en ;
   skos:definition "The peer learner serving as tutor of another learner."@en ;
   skos:broader audRole:student ;
@@ -59,7 +59,7 @@ audRole:professional a skos:Concept ;
 audRole:student a skos:Concept ;
   skos:prefLabel "student"@en ;
   skos:definition "The learner or trainee."@en ;
-  skos:narrower audRole:peerTutor ;
+  skos:narrower audRole:peertutor ;
   skos:inScheme audRole: .
 
 audRole:teacher a skos:Concept ;
