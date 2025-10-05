@@ -1,68 +1,156 @@
-@prefix audRole: <http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix gskloester: <http://unsere-domain.de/ontologies/kloesterundstifte/>.
+@prefix gsorden: <http://unsere-domain.de/ontologies/orden/>.
+@prefix gsorte: <http://unsere-domain.de/ontologies/orte/>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix factgrid: <https://database.factgrid.de/wiki/>.
 
-# Concept Scheme
-audRole: a skos:ConceptScheme ;
-  dct:title "LRMI Educational Audience Role Vocabulary"@en ;
-  dc:creator "LRMI Task Group (DCMI)"@en ;
-  dct:description "A concept scheme that defines the primary or intended roles of the audience (beneficiary) of the resource being described."@en ;
-  dct:created "2017-03-01"^^xsd:date ;
-  dct:modified "2017-12-20"^^xsd:date ;
-  dct:license <http://creativecommons.org/licenses/by/4.0/> ;
-  skos:hasTopConcept
-    audRole:administrator,
-    audRole:generalpublic,
-    audRole:mentor,
-    audRole:parent,
-    audRole:professional,
-    audRole:student,
-    audRole:teacher .
+skos:broader rdf:type owl:ObjectProperty.
+skos:inScheme rdf:type owl:ObjectProperty.
+skos:hasTopConcept rdf:type owl:ObjectProperty.
+skos:exactMatch rdf:type owl:ObjectProperty.
 
-# Concepts
-audRole:administrator a skos:Concept ;
-  skos:prefLabel "administrator"@en ;
-  skos:definition "A trainer or educator with administrative authority and responsibility."@en ;
-  skos:inScheme audRole: .
+# GS Vokabular zu Klöstern und Stifen des alten Reiches
+gskloester:Klostervokabular rdf:type skos:ConceptScheme.
+gskloester:Klostervokabular rdfs:lable "Germania Sacra Vokabular zu Stiften und Klöstern des alten Reiches"@de.
+gskloester:Klostervokabular skos:hasTopConcept gskloester:ReligiöseGemeinschaft.
+gskloester:Klostervokabular skos:hasTopConcept gskloester:Gebäudekomplex.
 
-audRole:generalpublic a skos:Concept ;
-  skos:prefLabel "general public"@en ;
-  skos:definition "The public at large."@en ;
-  skos:inScheme audRole: .
 
-audRole:mentor a skos:Concept ;
-  skos:prefLabel "mentor"@en ;
-  skos:definition "Someone who advises, trains, supports, and/or guides."@en ;
-  skos:inScheme audRole: .
+# Religiöse Gemeinschaft
+gskloester:ReligiöseGemeinschaft rdf:type skos:Concept.
+gskloester:ReligiöseGemeinschaft rdfs:label "Religiöse Gemeinschaft"@de.
+gskloester:ReligiöseGemeinschaft skos:exactMatch factgrid:Item:Q704192.
+gskloester:ReligiöseGemeinschaft skos:inScheme gskloester:Klostervokabular.
 
-audRole:parent a skos:Concept ;
-  skos:prefLabel "parent"@en ;
-  skos:definition "A father, mother, or legal guardian."@en ;
-  skos:inScheme audRole: .
+# Religiöse Gemeinschaft > Kloster
+gskloester:Kloster rdf:type skos:Concept.
+gskloester:Kloster rdfs:label "Kloster"@de.
+gskloester:Kloster skos:exactMatch factgrid:Item:Q141472.
+gskloester:Kloster skos:broader gskloester:ReligiöseGemeinschaft.
+gskloester:Kloster skos:inScheme gskloester:Klostervokabular.
 
-audRole:peertutor a skos:Concept ;
-  skos:prefLabel "peer tutor"@en ;
-  skos:definition "The peer learner serving as tutor of another learner."@en ;
-  skos:broader audRole:student ;
-  skos:inScheme audRole: .
 
-audRole:professional a skos:Concept ;
-  skos:prefLabel "professional"@en ;
-  skos:definition "Someone already practicing a profession; an industry partner, or professional development trainer."@en ;
-  skos:inScheme audRole: .
+# Religiöse Gemeinschaft > Kloster > Abtei
+gskloester:Abtei rdf:type skos:Concept.
+gskloester:Abtei rdfs:label "Abtei"@de.
+gskloester:Abtei skos:exactMatch factgrid:Item:Q23241.
+gskloester:Abtei skos:broader gskloester:Kloster.
+gskloester:Abtei skos:inScheme gskloester:Klostervokabular.
 
-audRole:student a skos:Concept ;
-  skos:prefLabel "student"@en ;
-  skos:definition "The learner or trainee."@en ;
-  skos:narrower audRole:peertutor ;
-  skos:inScheme audRole: .
+# Religiöse Gemeinschaft > Kloster > Doppelkloster
+gskloester:Doppelkloster rdf:type skos:Concept.
+gskloester:Doppelkloster rdfs:label "Doppelkloster"@de.
+gskloester:Doppelkloster skos:exactMatch factgrid:Item:Q164280.
+gskloester:Doppelkloster skos:broader gskloester:Kloster.
+gskloester:Doppelkloster skos:inScheme gskloester:Klostervokabular.
 
-audRole:teacher a skos:Concept ;
-  skos:prefLabel "teacher"@en ;
-  skos:definition "A person who has been trained to implement educational methods and practices."@en ;
-  skos:inScheme audRole: .
+# Religiöse Gemeinschaft > Kloster >Frauenkloster
+gskloester:Frauenkloster rdf:type skos:Concept.
+gskloester:Frauenkloster rdfs:label "Frauenkloster"@de.
+gskloester:Frauenkloster skos:broader gskloester:Kloster.
+gskloester:Frauenkloster skos:inScheme gskloester:Klostervokabular.
+
+# Religiöse Gemeinschaft > Kolleg
+gskloester:Kolleg rdf:type skos:Concept.
+gskloester:Kolleg rdfs:label "Kolleg"@de.
+gskloester:Kolleg skos:broader gskloester:ReligiöseGemeinschaft.
+gskloester:Kolleg skos:inScheme gskloester:Klostervokabular.
+
+# Religiöse Gemeinschaft > Kommende
+gskloester:Kommende rdf:type skos:Concept.
+gskloester:Kommende rdfs:label "Kommende"@de.
+gskloester:Kommende skos:exactMatch factgrid:Item:Q395378.
+gskloester:Kommende skos:broader gskloester:ReligiöseGemeinschaft.
+gskloester:Kommende skos:inScheme gskloester:Klostervokabular.
+
+# Religiöse Gemeinschaft > Komturei
+gskloester:Komturei rdf:type skos:Concept.
+gskloester:Komturei rdfs:label "Komturei"@de.
+gskloester:Komturei skos:broader gskloester:ReligiöseGemeinschaft.
+gskloester:Komturei skos:inScheme gskloester:Klostervokabular.
+
+# Religiöse Gemeinschaft > Konvent
+gskloester:Konvent rdf:type skos:Concept.
+gskloester:Konvent rdfs:label "Konvent"@de.
+gskloester:Konvent skos:exactMatch factgrid:Item:Q399022.
+gskloester:Konvent skos:broader gskloester:ReligiöseGemeinschaft.
+gskloester:Konvent skos:inScheme gskloester:Klostervokabular.
+
+# Religiöse Gemeinschaft > Priorat
+gskloester:Priorat rdf:type skos:Concept.
+gskloester:Priorat rdfs:label "Priorat"@de.
+gskloester:Priorat skos:exactMatch factgrid:Item:Q164863.
+gskloester:Priorat skos:broader gskloester:ReligiöseGemeinschaft.
+gskloester:Priorat skos:inScheme gskloester:Klostervokabular.
+
+# Religiöse Gemeinschaft > Propstei
+gskloester:Propstei rdf:type skos:Concept.
+gskloester:Propstei rdfs:label "Propstei"@de.
+gskloester:Propstei skos:broader gskloester:ReligiöseGemeinschaft.
+gskloester:Propstei skos:inScheme gskloester:Klostervokabular.
+
+# Religiöse Gemeinschaft > Semireligiöse Gemeinschaft
+gskloester:SemireligiöseGemeinschaft rdf:type skos:Concept.
+gskloester:SemireligiöseGemeinschaft rdfs:label "Semireligiöse Gemeinschaft"@de.
+gskloester:SemireligiöseGemeinschaft skos:inScheme gskloester:Klostervokabular.
+
+# Religiöse Gemeinschaft > Semireligiöse Gemeinschaft > Beginenhaus
+gskloester:Beginenhaus rdf:type skos:Concept.
+gskloester:Beginenhaus rdfs:label "Beginenhaus"@de.
+gskloester:Beginenhaus skos:broader gskloester:SemireligiöseGemeinschaft.
+gskloester:Beginenhaus skos:inScheme gskloester:Klostervokabular.
+
+# Religiöse Gemeinschaft > Semireligiöse Gemeinschaft > Bruderhaus
+gskloester:Bruderhaus rdf:type skos:Concept.
+gskloester:Bruderhaus rdfs:label "Bruderhaus"@de.
+gskloester:Bruderhaus skos:broader gskloester:SemireligiöseGemeinschaft.
+gskloester:Bruderhaus skos:inScheme gskloester:Klostervokabular.
+
+# Religiöse Gemeinschaft > Semireligiöse Gemeinschaft > Schwesternhaus
+gskloester:Schwesternhaus rdf:type skos:Concept.
+gskloester:Schwesternhaus rdfs:label "Schwesternhaus"@de.
+gskloester:Schwesternhaus skos:broader gskloester:SemireligiöseGemeinschaft.
+gskloester:Schwesternhaus skos:inScheme gskloester:Klostervokabular.
+
+# Religiöse Gemeinschaft > Stift
+gskloester:Stift rdf:type skos:Concept.
+gskloester:Stift rdfs:label "Stift"@de.
+gskloester:Stift skos:exactMatch factgrid:Item:Q523002.
+gskloester:Stift skos:broader gskloester:ReligiöseGemeinschaft.
+gskloester:Stift skos:inScheme gskloester:Klostervokabular.
+
+# Religiöse Gemeinschaft > Stift > Damenstift
+gskloester:Damenstift rdf:type skos:Concept.
+gskloester:Damenstift rdfs:label "Damenstift"@de.
+gskloester:Damenstift skos:broader gskloester:Stift.
+gskloester:Damenstift skos:inScheme gskloester:Klostervokabular.
+
+# Religiöse Gemeinschaft > Stift > Damenstift > Adeliges Damenstift
+gskloester:AdeligesDamenstift rdf:type skos:Concept.
+gskloester:AdeligesDamenstift rdfs:label "Adeliges Damenstift"@de.
+gskloester:AdeligesDamenstift skos:broader gskloester:Damenstift.
+gskloester:AdeligesDamenstift skos:inScheme gskloester:Klostervokabular.
+
+# Religiöse Gemeinschaft > Stift > Domstift
+gskloester:Domstift rdf:type skos:Concept.
+gskloester:Domstift rdfs:label "Domstift"@de.
+gskloester:Domstift skos:exactMatch factgrid:Item:Q164867.
+gskloester:Domstift skos:broader gskloester:Stift.
+gskloester:Domstift skos:inScheme gskloester:Klostervokabular.
+
+# Religiöse Gemeinschaft > Stift > Kollegiatstift
+gskloester:Kollegiatstift rdf:type skos:Concept.
+gskloester:Kollegiatstift rdfs:label "Kollegiatstift"@de.
+gskloester:Kollegiatstift skos:exactMatch factgrid:Item:Q160437.
+gskloester:Kollegiatstift skos:broader gskloester:Stift.
+gskloester:Kollegiatstift skos:inScheme gskloester:Klostervokabular.
+
+# Gebäudekomplex
+gskloester:Gebäudekomplex rdf:type skos:Concept.
+gskloester:Gebäudekomplex rdfs:label "Gebäudekomplex"@de.
+gskloester:Gebäudekomplex skos:exactMatch factgrid:Item:Q635758.
+gskloester:Gebäudekomplex skos:inScheme gskloester:Klostervokabular.
