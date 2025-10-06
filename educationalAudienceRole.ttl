@@ -1,4 +1,3 @@
-
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -18,11 +17,11 @@
   skos:inScheme <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> .
 
 <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> a skos:ConceptScheme ;
-    skos:notation "germania_sacra_wiag_orden" ;
-    skos:prefLabel "WIAG Orden"@de, "WIAG Orden"@en ;
-    dct:license <http://creativecommons.org/licenses/by-sa/4.0/> ;
-    skos:hasTopConcept <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/619135ce-fa63-4fba-918b-8071feeda008> ;
-    vann:preferredNamespaceUri "http://uri.gbv.de/terminology/germania_sacra_wiag_orden/" .
+  skos:notation "germania_sacra_wiag_orden" ;
+  skos:prefLabel "WIAG Orden"@de, "WIAG Orden"@en ;
+  skos:hasTopConcept <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/619135ce-fa63-4fba-918b-8071feeda008>;
+  dct:license <http://creativecommons.org/licenses/by-sa/4.0/> ;
+  vann:preferredNamespaceUri "http://uri.gbv.de/terminology/germania_sacra_wiag_orden/".
 
 <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/03ec7558-32fb-4a58-a9a7-26ce0888bbc9> a <http://d-nb.info/standards/elementset/gnd#CorporateBody>, skos:Concept, <http://xmlns.com/foaf/spec/#term_Organization> ;
   skos:notation "4" ;
@@ -301,8 +300,8 @@
   skos:prefLabel "Kreuzherren"@de ;
   dct:publisher [
     skos:prefLabel "Germania Sacra"@de
-  ] ;
-  skos:inScheme <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> .
+  ] .
+  #skos:inScheme <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> .
 
 <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/61d5328a-9f74-4fb7-83b9-a64866e7790d> a <http://d-nb.info/standards/elementset/gnd#CorporateBody>, skos:Concept, <http://xmlns.com/foaf/spec/#term_Organization> ;
   skos:notation "28" ;
