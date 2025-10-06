@@ -18,11 +18,11 @@
   skos:inScheme <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> .
 
 <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> a skos:ConceptScheme ;
-  
-  skos:prefLabel "WIAG Orden"@de, "WIAG Orden"@en ;
-  skos:hasTopConcept <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/619135ce-fa63-4fba-918b-8071feeda008>;
-  dct:license <http://creativecommons.org/licenses/by-sa/4.0/> ;
-  vann:preferredNamespaceUri "http://uri.gbv.de/terminology/germania_sacra_wiag_orden/".
+    skos:notation "germania_sacra_wiag_orden" ;
+    skos:prefLabel "WIAG Orden"@de, "WIAG Orden"@en ;
+    dct:license <http://creativecommons.org/licenses/by-sa/4.0/> ;
+    skos:hasTopConcept <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/619135ce-fa63-4fba-918b-8071feeda008> ;
+    vann:preferredNamespaceUri "http://uri.gbv.de/terminology/germania_sacra_wiag_orden/" .
 
 <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/03ec7558-32fb-4a58-a9a7-26ce0888bbc9> a <http://d-nb.info/standards/elementset/gnd#CorporateBody>, skos:Concept, <http://xmlns.com/foaf/spec/#term_Organization> ;
   skos:notation "4" ;
