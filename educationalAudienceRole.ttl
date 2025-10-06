@@ -18,7 +18,7 @@
   skos:inScheme <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> .
 
 <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> a skos:ConceptScheme ;
-  skos:notation "germania_sacra_wiag_orden" ;
+  
   skos:prefLabel "WIAG Orden"@de, "WIAG Orden"@en ;
   skos:hasTopConcept <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/619135ce-fa63-4fba-918b-8071feeda008>;
   dct:license <http://creativecommons.org/licenses/by-sa/4.0/> ;
