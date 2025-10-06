@@ -1,7 +1,7 @@
-
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/>.
 
 <http://creativecommons.org/licenses/by-sa/4.0/> skos:notation "CC BY-SA 4.0" ;
   skos:prefLabel "Creative Commons Attribution-ShareAlike 4.0"@en, "Creative Commons Namensnennung, Weitergabe unter gleichen Bedingungen 4.0"@de .
@@ -19,7 +19,9 @@
 <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> a skos:ConceptScheme ;
   skos:notation "germania_sacra_wiag_orden" ;
   skos:prefLabel "WIAG Orden"@de, "WIAG Orden"@en ;
-  dct:license <http://creativecommons.org/licenses/by-sa/4.0/> .
+  skos:hasTopConcept <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/619135ce-fa63-4fba-918b-8071feeda008>;
+  dct:license <http://creativecommons.org/licenses/by-sa/4.0/> ;
+  vann:preferredNamespaceUri "http://uri.gbv.de/terminology/germania_sacra_wiag_orden/".
 
 <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/03ec7558-32fb-4a58-a9a7-26ce0888bbc9> a <http://d-nb.info/standards/elementset/gnd#CorporateBody>, skos:Concept, <http://xmlns.com/foaf/spec/#term_Organization> ;
   skos:notation "4" ;
