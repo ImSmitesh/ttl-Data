@@ -17,10 +17,14 @@
   skos:definition "Bei den Cölestinern handelt es sich um eine vom hl. Pietro del Morrone, dem späteren Papst Coelestin V., gegründete monastische Kongregation nach der Benediktregel, deren Mitglieder ein eremitisches und einfaches Leben führten. Sie wurden 1263 durch Papst Urban IV. bestätigt. 1294 schloss Papst Coelestin V. die Franziskaner-Spiritualen den Cölestinern als selbstständige Kongregation an, diese wurde jedoch 1295 durch Papst Bonifatius VIII. wieder unterdrückt. Die Ausbreitung der Cölestiner blieb im Wesentlichen auf Italien und Frankreich beschränkt. Im Zuge der Säkularisation wurden die letzten Cölestinerklöster aufgehoben."@de ;
   skos:inScheme <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> .
 
+
 <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> a skos:ConceptScheme ;
     skos:notation "germania_sacra_wiag_orden" ;
     skos:prefLabel "WIAG Orden"@de ;
     skos:prefLabel "WIAG Orden"@en ;
+    dct:title "WIAG Orden"@de ;
+    dct:title "WIAG Orden"@en ;
+    dct:creator [ skos:prefLabel "Germania Sacra"@de ] ;
     skos:hasTopConcept <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/0326159b-0031-4acf-baf3-5bbd91156a5d> ;
     dct:license <http://creativecommons.org/licenses/by-sa/4.0/> ;
     vann:preferredNamespaceUri "http://uri.gbv.de/terminology/germania_sacra_wiag_orden" .
