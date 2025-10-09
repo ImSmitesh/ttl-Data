@@ -25,15 +25,14 @@
     dct:license <http://creativecommons.org/licenses/by-sa/4.0/> ;
     vann:preferredNamespaceUri "http://uri.gbv.de/terminology/germania_sacra_wiag_orden" .
 
-<http://uri.gbv.de/terminology/germania_sacra_wiag_orden/03ec7558-32fb-4a58-a9a7-26ce0888bbc9> a <http://d-nb.info/standards/elementset/gnd#CorporateBody>, skos:Concept, <http://xmlns.com/foaf/spec/#term_Organization> ;
-  skos:notation "4" ;
-  skos:prefLabel "Carthusians"@en, "Kartuizers"@nl, "Kartäuser"@de, "Ordo Cartusiensis"@la ;
-  dct:publisher [
-    skos:prefLabel "Germania Sacra"@de
-  ] ;
-  skos:altLabel "OCart"@la ;
-  skos:definition "Der Kartäuserorden geht auf den hl. Bruno von Köln (1032–1101) zurück, der diesen strengen Reformorden 1084 in der Nähe von Chartreuse gründete. Die 1127 verfassten Konstitutionen wurden 1133 von Papst Innozenz II. († 1143) approbiert. Das Klosterleben der Kartäuser ist geprägt durch ein strenges Armuts- und Schweigegebot. Die Mönche sollten in eigenen Häusern oder Zellen alleine leben und kamen nur zu bestimmten Gebetszeiten und zu Sonn- und Feiertagen in der Gemeinschaft zusammen. Im 12. Jahrhundert breitete sich der Kartäuserorden vor allem in Frankreich aus, dann auch in den europäischen Nachbarländern. Der Orden spielte eine wichtige Rolle in der klösterlichen Reformbewegung des 11. und 12. Jahrhunderts."@de ;
-  skos:inScheme <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> .
+<http://uri.gbv.de/terminology/germania_sacra_wiag_orden/0326159b-0031-4acf-baf3-5bbd91156a5d> a skos:Concept ;
+    skos:prefLabel "Coelestiner"@de ;
+    skos:prefLabel "Celestines"@en ;
+    skos:prefLabel "Ordo Sancti Benedicti Coelestinensis"@la ;
+    skos:altLabel "Cölestiner"@de, "Damianisten"@de, "Einsiedler vom hl. Damian"@de, "OSBCoel"@la ;
+    skos:definition "Bei den Cölestinern handelt es sich um eine vom hl. Pietro del Morrone, dem späteren Papst Coelestin V., gegründete monastische Kongregation nach der Benediktregel, deren Mitglieder ein eremitisches und einfaches Leben führten. Sie wurden 1263 durch Papst Urban IV. bestätigt. 1294 schloss Papst Coelestin V. die Franziskaner-Spiritualen den Cölestinern als selbstständige Kongregation an, diese wurde jedoch 1295 durch Papst Bonifatius VIII. wieder unterdrückt. Die Ausbreitung der Cölestiner blieb im Wesentlichen auf Italien und Frankreich beschränkt. Im Zuge der Säkularisation wurden die letzten Cölestinerklöster aufgehoben."@de ;
+    skos:inScheme <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> .
+
 
 <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/0610723b-3f2d-4f80-b4a0-e6d3e94c8e81> a <http://d-nb.info/standards/elementset/gnd#CorporateBody>, skos:Concept, <http://xmlns.com/foaf/spec/#term_Organization> ;
   skos:notation "46" ;
