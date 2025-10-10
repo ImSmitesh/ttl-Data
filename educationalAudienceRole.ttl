@@ -236,7 +236,7 @@ gsord:559c61a0-8e35-475b-b724-3807410b768f a skos:Concept ;
  skos:exactMatch <https://database.factgrid.de/entity/Q1195162>;
  skos:inScheme gsord:.
 
-gsord:ChorherrenVomHeiligen Grab a skos:Concept ;
+gsord:ChorherrenVomHeiligenGrab a skos:Concept ;
  skos:notation "GSReligiousOrder072" ;
  skos:prefLabel "Canons Regular of the Holy Sepulchre"@en, "Chorherren vom Heiligen Grab"@de, "Sepulcrijnen"@nl ;
  skos:altLabel "Ordo Can. Reg. SS. Supulchri Hierosolymitani"@la, "Sepulcriner"@de ;
