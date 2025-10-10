@@ -51,7 +51,7 @@ gsord:Redemptoristen a skos:Concept ;
  skos:prefLabel "Congregatio Sanctissimi Redemptoris"@la, "Redemptoristen"@de, "Redemptorists"@en ;
  skos:altLabel "CSsR"@la, "Kongregation des heiligsten Erlösers"@de ;
  skos:definition "Bei den Redemptoristen handelt es sich um einen Missionsorden, der 1732 in Scala (Königreich Neapel) von dem italienischen Theologen Alfons M. de Liguori († 1787) gegründet wurde. Die 1749 approbierte Regel nennt als Bestimmung des Ordens die Nachfolge Jesu, insbesondere durch die Verkündigung des Evangeliums an die religiös \"Verlassenen\". Der Orden breitete sich in Italien, Deutschland und in der Schweiz aus. Das Entgegenkommen gegenüber dem Staatskirchentum führte 1780-1793 zur Spaltung des Ordens, wobei Rom nur die Klöster im Kirchenstaat anerkannte. 1784 traten die Österreicher C. M. Hofbauer und Thaddäus Hübl in den römischen Zweig ein, um ihn jenseits der Alpen zu verbreiten."@de ;
- exactMatch <https://d-nb.info/gnd/2007048-2> ;
+ skos:exactMatch <https://d-nb.info/gnd/2007048-2> ;
  skos:exactMatch <https://www.wikidata.org/wiki/Q751148> ;
  skos:exactMatch <https://database.factgrid.de/entity/Q640766> ;
  skos:inScheme gsord:.
