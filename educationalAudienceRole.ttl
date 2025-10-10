@@ -7,10 +7,10 @@
     a skos:ConceptScheme ;
     skos:prefLabel "Germania Sacra: Wiag Religious Orders"@en ;
     skos:definition "A concept scheme for religious orders used in Germania Sacra and Wiag vocabularies."@en ;
-    dc:creator "Germania Sacra / Wiag Project" ;
-    dc:language "de" ;
-    dc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dc:source <https://germania-sacra.de/> .
+    dct:creator "Germania Sacra / Wiag Project" ;
+    dct:language "de" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:source <https://germania-sacra.de/> .
 
 
 <http://creativecommons.org/licenses/by-sa/4.0/> skos:notation "CC BY-SA 4.0" ;
