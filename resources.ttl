@@ -5,10 +5,10 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Concept Scheme
-gsord: a skos:ConceptScheme;
+gsord:a a skos:ConceptScheme;
   dct:title "WIAG Ordensvokabular"@de;
   dc:creator "Germania Sacra / Wiag Project"@en;
-  dct:description "Ein Vokabular zu religiösen Orden, verwendet in Germania Sacra."@de;
+  dct:description "A concept scheme for religious orders used in Germania Sacra and Wiag vocabularies."@en;
   dct:license <https://creativecommons.org/licenses/by/4.0/>;
   dct:language "de";
   dct:created "2025-10-10"^^xsd:date;
@@ -28,85 +28,88 @@ gsord: a skos:ConceptScheme;
     gsord:Kapuzinerinnen,
     gsord:Barmherzige_Brueder.
 
-# Coelestiner
-gsord:Coelestiner a skos:Concept;
-  skos:prefLabel "Celestines"@en, "Coelestiner"@de, "Ordo Sancti Benedicti Coelestinensis"@la;
-  skos:altLabel "Cölestiner"@de, "Damianisten"@de, "Einsiedler vom hl. Damian"@de, "OSBCoel"@la;
-  skos:definition "Bei den Cölestinern handelt es sich um eine vom hl. Pietro del Morrone gegründete monastische Kongregation nach der Benediktregel."@de;
-  skos:broader gsord:Orden_nach_der_Benediktregel;
-  skos:related gsord:Coelestinerinnen;
-  skos:exactMatch <http://d-nb.info/gnd/4335315-0>;
-  skos:exactMatch <https://database.factgrid.de/wiki/Item:Q640742>;
-  skos:exactMatch <https://www.wikidata.org/wiki/Q1093546>;
-  skos:exactMatch <http://viaf.org/viaf/247807713>;
-  skos:inScheme gsord:.
+# Individual Concepts
 
-# Kartäuser
-gsord:Kartäuser a skos:Concept;
-  skos:prefLabel "Carthusians"@en, "Kartuizers"@nl, "Kartäuser"@de, "Ordo Cartusiensis"@la;
-  skos:altLabel "OCart"@la;
-  skos:definition "Der Kartäuserorden geht auf den hl. Bruno von Köln zurück, geprägt durch strenges Armuts- und Schweigegebot."@de;
-  skos:broader gsord:Orden_nach_der_Benediktregel;
-  skos:related gsord:Kartäuserinnen;
-  skos:exactMatch <https://d-nb.info/gnd/1017943-4>;
-  skos:exactMatch <https://www.wikidata.org/wiki/Q220979>;
-  skos:exactMatch <http://vocab.getty.edu/page/aat/300148065>;
-  skos:exactMatch <https://database.factgrid.de/entity/Q394850>;
-  skos:inScheme gsord:.
-
-# Brüder vom gemeinsamen Leben
-gsord:Brueder_vom_gemeinsamen_Leben a skos:Concept;
-  skos:prefLabel "Brethren of the Common Life"@en, "Broeders des gemenen levens"@nl, "Brüder vom gemeinsamen Leben"@de, "Fratres communis vitae"@la;
-  skos:altLabel "CRVC"@la, "Fraterherren"@de, "Kugelherren"@de;
-  skos:broader gsord:Regularkanoniker;
-  skos:broader gsord:Semireligiöse_M;
-  skos:related gsord:Schwestern_vom_gemeinsamen_Leben;
-  skos:exactMatch <https://database.factgrid.de/entity/Q498922>;
-  skos:exactMatch <https://d-nb.info/gnd/4008437-1>;
-  skos:inScheme gsord:.
-
-# Alexianerinnen
-gsord:Alexianerinnen a skos:Concept;
-  skos:prefLabel "Alexian Sisters"@en, "Cellezusters"@nl, "Cellitinnen"@de;
-  skos:altLabel "Alexianerinnen"@de, "CFA (w)"@la, "Schwarze Schwestern"@de;
-  skos:definition "Bei den Cellitinnen bzw. Alexianerinnen handelt es sich um eine weibliche Ordensgemeinschaft nach der Augustinusregel."@de;
-  skos:broader gsord:Orden_nach_der_Augustinusregel;
-  skos:related gsord:Alexianer;
-  skos:exactMatch <https://d-nb.info/gnd/4212649-6>;
-  skos:exactMatch <https://database.factgrid.de/entity/Q1195148>;
-  skos:inScheme gsord:.
-
-# Redemptoristen
-gsord:Redemptoristen a skos:Concept;
-  skos:prefLabel "Congregatio Sanctissimi Redemptoris"@la, "Redemptoristen"@de, "Redemptorists"@en;
-  skos:altLabel "CSsR"@la, "Kongregation des heiligsten Erlösers"@de;
-  skos:definition "Ein Missionsorden, gegründet 1732 von Alfons M. de Liguori."@de;
-  skos:exactMatch <https://d-nb.info/gnd/2007048-2>;
-  skos:exactMatch <https://www.wikidata.org/wiki/Q751148>;
-  skos:exactMatch <https://database.factgrid.de/entity/Q640766>;
-  skos:inScheme gsord:.
-
-# Lazaristen
-gsord:Lazaristen a skos:Concept;
-  skos:prefLabel "Congregatio Missionis"@la, "Knights of St Lazarus"@en, "Lazarieten"@nl, "Lazaristen"@de;
-  skos:altLabel "CM"@la, "Vinzentiner"@de;
-  skos:definition "Die Lazaristen sind eine Gemeinschaft apostolischen Lebens, gegründet 1625 von Vinzenz von Paul."@de;
-  skos:exactMatch <https://d-nb.info/gnd/1024069-X>;
-  skos:exactMatch <https://www.wikidata.org/wiki/Q849726>;
-  skos:exactMatch <https://database.factgrid.de/entity/Q1195226>;
-  skos:inScheme gsord:.
-
-# Augustinerchorfrauen BMV
-gsord:Augustinerchorfrauen_BMV a skos:Concept;
-  skos:prefLabel "Augustinerchorfrauen B.M.V."@de, "Congregatio Beatae Mariae Virginis"@la;
-  skos:altLabel "CBMV"@la, "Chorfrauen U. L. F."@de, "Kongregation der allerseligsten Jungfrau"@de, "Welschnonnen"@de;
-  skos:broader gsord:Augustinerchorfrauen;
-  skos:broader gsord:Orden_nach_der_Augustinusregel;
-  skos:inScheme gsord:.
-
-# Brudergemeinschaft (top concept)
 gsord:Brudergemeinschaft a skos:Concept;
-  skos:prefLabel "Broederschap"@nl, "Brudergemeinschaft"@de, "Fraternal orders"@en, "Fraternité"@fr;
-  skos:altLabel "Bruderschaft"@de;
-  skos:exactMatch <https://database.factgrid.de/entity/Q636405>;
-  skos:topConceptOf gsord:.
+  skos:prefLabel "Brudergemeinschaft"@de;
+  skos:definition "A brotherhood or fraternal religious community."@en;
+  skos:inScheme gsord:.
+
+gsord:Franziskanerorden a skos:Concept;
+  skos:prefLabel "Franziskanerorden"@de;
+  skos:definition "The Franciscan Order founded by St. Francis of Assisi."@en;
+  skos:inScheme gsord:.
+
+gsord:Hospitaliterinnen a skos:Concept;
+  skos:prefLabel "Hospitaliterinnen"@de;
+  skos:definition "A female religious order associated with the Hospitaller tradition."@en;
+  skos:inScheme gsord:.
+
+gsord:Semireligiöse_W a skos:Concept;
+  skos:prefLabel "Semireligiöse_W"@de;
+  skos:definition "A female semi-religious community."@en;
+  skos:inScheme gsord:.
+
+gsord:Kreuzherren a skos:Concept;
+  skos:prefLabel "Kreuzherren"@de;
+  skos:definition "Canons Regular of the Holy Cross."@en;
+  skos:inScheme gsord:.
+
+gsord:Orden_nach_der_Benediktregel a skos:Concept;
+  skos:prefLabel "Orden nach der Benediktregel"@de;
+  skos:definition "Religious orders following the Rule of Saint Benedict."@en;
+  skos:inScheme gsord:.
+
+gsord:Orden_nach_der_Augustinusregel a skos:Concept;
+  skos:prefLabel "Orden nach der Augustinusregel"@de;
+  skos:definition "Religious orders following the Rule of Saint Augustine."@en;
+  skos:inScheme gsord:.
+
+gsord:Regularkanoniker a skos:Concept;
+  skos:prefLabel "Regularkanoniker"@de;
+  skos:definition "Canons Regular, clergy following a specific religious rule."@en;
+  skos:inScheme gsord:.
+
+gsord:Semireligiöse_M a skos:Concept;
+  skos:prefLabel "Semireligiöse_M"@de;
+  skos:definition "A male semi-religious community."@en;
+  skos:inScheme gsord:.
+
+gsord:Mendikantenorden a skos:Concept;
+  skos:prefLabel "Mendikantenorden"@de;
+  skos:definition "Mendicant orders devoted to preaching and poverty."@en;
+  skos:inScheme gsord:.
+
+gsord:Hospitaliter a skos:Concept;
+  skos:prefLabel "Hospitaliter"@de;
+  skos:definition "A male religious order associated with the Hospitaller tradition."@en;
+  skos:inScheme gsord:.
+
+gsord:Kapuzinerinnen a skos:Concept;
+  skos:prefLabel "Kapuzinerinnen"@de;
+  skos:definition "The female branch of the Capuchin order."@en;
+  skos:inScheme gsord:.
+
+gsord:Barmherzige_Brueder a skos:Concept;
+  skos:prefLabel "Barmherzige Brüder"@de;
+  skos:definition "The Brothers of Mercy, a religious congregation caring for the sick."@en;
+  skos:inScheme gsord:.
+
+# Example from your previous data
+gsord:Coelestiner a skos:Concept;
+  skos:prefLabel "Coelestiner"@de;
+  skos:definition "A monastic congregation founded by Pope Coelestin V following the Benedictine rule."@en;
+  skos:broader gsord:Orden_nach_der_Benediktregel;
+  skos:inScheme gsord:.
+
+gsord:Kartäuser a skos:Concept;
+  skos:prefLabel "Kartäuser"@de;
+  skos:definition "The Carthusian Order, a strict monastic order following the Benedictine rule."@en;
+  skos:broader gsord:Orden_nach_der_Benediktregel;
+  skos:inScheme gsord:.
+
+gsord:Alexianerinnen a skos:Concept;
+  skos:prefLabel "Alexianerinnen"@de;
+  skos:definition "A female religious order from the late Middle Ages, following the Augustinian rule."@en;
+  skos:broader gsord:Orden_nach_der_Augustinusregel;
+  skos:inScheme gsord:.
