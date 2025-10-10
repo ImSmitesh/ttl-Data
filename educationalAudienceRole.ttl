@@ -584,7 +584,7 @@ gsord:Benediktiner a skos:Concept ;
  skos:prefLabel "Ordo Sancti Benedicti"@la, "Benedictijnen"@nl, "Benedictines"@en, "Benediktiner"@de ;
  skos:altLabel "Black Monks"@en, "OSB"@la ;
  skos:definition "Der nach Benedikt von Nursia benannte Benediktinerorden war der wichtigste Orden des frühen und hohen Mittelalters. Das angelsächsische Mönchtum war bereits im 7./8. Jahrhundert benediktinisch geprägt, die Regula Benedicti (Benediktsregel) hatte jedoch keine Exklusivgeltung. Auch Klosterneugründungen außerhalb Großbritanniens lebten zunächst nach der Mischregeltradition. Anfang des 9. Jahrhunderts machten die karolingischen Herrscher die Regula Benedicti zur Norm des fränkischen Mönchtums – die karolingische Mönchsreform gilt als 'Geburtsstunde des benediktinischen Mönchtums'. Die Aachener Gesetzgebung von 816 machte die Benediktregel verpflichtend und trennte Mönche von Kanonikern. Das Klosterleben wird durch die Losung \"Ora et labora et lege\" (Bete und arbeite und lies) geprägt. Der Benediktinerorden hatte eine herausragende religiöse, politische, wirtschaftliche und kulturelle Bedeutung."@de ;
- skos:broader gsord:Orden_nach_der_Benediktregel
+ skos:broader gsord:Orden_nach_der_Benediktregel ;
  skos:inScheme gsord:.
 
 gsord:cd5fd153-7e32-4596-b6ce-c0b5da2e91b9 a skos:Concept ;
@@ -599,7 +599,7 @@ gsord:d7904f4f-e57b-4f7e-b38f-9663ad7126a1 a skos:Concept ;
  skos:prefLabel "Alexianen"@nl, "Alexianer"@de, "Alexians"@en, "Congregatio Fratrum Alexianorum"@la ;
  skos:altLabel "Alexianerbrüder"@de, "CFA"@la, "Cellebroeders"@nl, "Celliten"@de ;
  skos:definition "Bei den Alexianern handelt es sich um Brüdergemeinschaften, deren Hauptaufgabe die Krankenpflege war. Die Ursprünge dieser Ordensgemeinschaften liegen in den religiösen Laienbewegungen des Mittelalters, den Begarden. Die Alexianer waren zunächst vor allem am Niederrhein, in den Niederlanden und in Belgien verbreitet. Die Alexianer von Aachen sind seit 1462 als eigene Gemeinschaft nach der Augustinusregel päpstlich anerkannt. Teilweise folgten sie der Regel des Dritten Ordens des heiligen Franziskus, überwiegend jedoch der Augustinusregel."@de ;
- skos:broader gsord:Orden_nach_der_Augustinusregel
+ skos:broader gsord:Orden_nach_der_Augustinusregel ;
  skos:inScheme gsord:.
 
 gsord:dd35bf02-8b4e-4f00-826a-c86dceb38bf8 a skos:Concept ;
@@ -669,7 +669,7 @@ gsord:ec093aef-8b47-4bf7-bd0e-dfdc1e100789 a skos:Concept ;
  skos:prefLabel "Ordo Cisterciensium Reformatorum"@la, "Trappisten"@de, "Trappists"@en ;
  skos:altLabel "OCR"@la, "Ordo Cisterciensium strictioris observantiae"@la, "Reformierte Zisterzienser"@de, "Trappisten"@nl ;
  skos:definition "Bei den Trappisten handelt es sich um einen Orden, der im 17. Jahrhundert als Reformzweig aus dem Zisterzienserorden hervorgegangen ist. Als eigenständiger, von den Zisterziensern unabhängiger Orden konstituierten sich die Trappisten, benannt nach der Abtei La Trappe, erst 1892 unter Leo XIII. Sie nahmen die Benediktregel an. Im monastisch kontemplativen Leben der Trappisten stehen Gebet, Lesung und Handarbeit beziehungsweise Lebensmittelherstellung im Fokus. Es lassen sich zwei Vorstufen der Ordensgründung unterscheiden: a) seit 1664 die Reform des Abtes von La Trappe, A.-J. Le Bouthillier de Rancé, im Rahmen der zisterziensischen Reformbewegung und b) seit 1785 die Fortführung seiner Reformbemühungen durch A. de Lestrange und ihre Umsetzung im Exil in Valsainte. War die Ausbreitung zunächst auf Frankreich beschränkt, verbreitete sich der Orden im 20. Jahrhundert weltweit."@de ;
- skos:broader gsord:Orden_nach_der_Benediktregel;
+ skos:broader gsord:Orden_nach_der_Benediktregel ;
  skos:inScheme gsord:.
 
 gsord:f05d4881-58cb-4521-851a-ffd7f24661a0 a skos:Concept ;
@@ -678,13 +678,13 @@ gsord:f05d4881-58cb-4521-851a-ffd7f24661a0 a skos:Concept ;
  skos:definition "Die Kamaldulenser-Eremiten von Monte Corona wurden vom Kamaldulenser Paolo Giustiniani gegründet; 1520 hatte dieser versucht, eine strenge Reform bei den Kamaldulensern durchzusetzen, woraufhin sich die Eremiten von Monte Corona 1523 abtrennten und Eremitagen in Italien, Polen und Österreich gründeten. Die Kamaldulenser-Eremiten gehören nicht zur Ordensfamilie der Benediktiner."@de ;
  skos:inScheme gsord:.
 
-gsord:Kapuzinerinnen a skos:Concept;
+gsord:Kapuzinerinnen a skos:Concept ;
  skos:prefLabel "Cappuccine"@it, "Capuchiness"@en, "Kapucijner Nons"@nl, "Kapuzinerinnen"@de ;
  skos:altLabel "Kapuzinessen"@de, "Capuchin Nuns"@en, "Kapuciness"@en ;
  skos:definition "Oberbegriff für die weiblichen Reformzweige des Kapuzinerordens. \"Kapuzinerinnen\" ist eine Bezeichnung für aus verschiedenen Ordenstraditionen hervorgegangene religiöse Gemeinschaften von Frauen, die sich in Tracht und Lebensweise dem Kapuzinerorden anglichen. 1538 gingen die ersten Kapuzinerinnen aus einem Klarissenkloster in Neapel hervor – daran angelehnt entstanden Klöster in Italien, Spanien und Frankreich. In der Schweiz und dem deutschsprachigen Raum entstanden Kapuzinerinnenklöster aus Franziskaner-Terziarinnenklöstern, nachdem 1591 Elisabeth Spitzlin aus dem Kloster Pfanneregg entsprechende Reformen initiierte und dabei von verschiedenen Nuntiaturen unterstützt wurde."@de ;
  skos:topConceptOf gsord:.
 
-gsord:Barmherzige_Brueder a skos:Concept;
+gsord:Barmherzige_Brueder a skos:Concept ;
  skos:notation "GSReligiousOrder062" ;
  skos:prefLabel "Barmherzige Brüder"@de ;
  skos:definition "Bezeichnung für verschiedene Brüdergemeinschaften, deren Mitglieder vorwiegend in der Kranken- und Altenpflege tätig sind."@de ;
