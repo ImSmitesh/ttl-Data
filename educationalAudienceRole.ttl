@@ -1,80 +1,38 @@
-@prefix gsord: <https://gsord.germania-sacra.de/resources/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix gsord: <https://gsord.germania-sacra.de/resources/> .
 
-gsord: a skos:ConceptScheme ;
-  dct:title "WIAG Ordensvokabular"@de ;
-  dc:creator "Germania Sacra / WIAG Project"@de ;
-  dct:description "Ein kontrolliertes Vokabular religiöser Orden für die Germania Sacra / WIAG-Daten."@de ;
-  dct:created "2024-01-01"^^xsd:date ;
-  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
-  skos:hasTopConcept
-    gsord:Brudergemeinschaft,
-    gsord:Franziskanerorden,
-    gsord:Hospitaliterinnen,
-    gsord:Semireligiöse_W,
-    gsord:Kreuzherren,
-    gsord:Orden_nach_der_Benediktregel,
-    gsord:Orden_nach_der_Augustinusregel,
-    gsord:Regularkanoniker,
-    gsord:Semireligiöse_M,
-    gsord:Mendikantenorden,
-    gsord:Hospitaliter,
-    gsord:Kapuzinerinnen,
-    gsord:Barmherzige_Brueder .
+<http://uri.gbv.de/terminology/germania_sacra_wiag_orden/>
+    a skos:ConceptScheme ;
+    skos:prefLabel "Germania Sacra: Wiag Religious Orders"@en ;
+    skos:definition "A concept scheme for religious orders used in Germania Sacra and Wiag vocabularies."@en ;
+    dct:creator "Germania Sacra / Wiag Project" ;
+    dct:language "de" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:source <https://germania-sacra.de/> ;
+    vann:preferredNamespaceUri "https://gsord.germania-sacra.de/resources/" ;
+    skos:hasTopConcept gsord:a, gsord:Alexianerinnen, gsord:Kartaeuser .
 
-gsord:Coelestiner a skos:Concept ;
-  skos:notation "GSReligiousOrder104" ;
-  skos:prefLabel "Celestines"@en, "Coelestiner"@de, "Ordo Sancti Benedicti Coelestinensis"@la ;
-  skos:altLabel "Cölestiner"@de, "Damianisten"@de, "Einsiedler vom hl. Damian"@de, "OSBCoel"@la ;
-  skos:definition "Vom hl. Pietro del Morrone (später Papst Coelestin V.) gegründete Benediktinerkongregation. 1263 bestätigt; verbreitet in Italien und Frankreich."@de ;
-  skos:broader gsord:Orden_nach_der_Benediktregel ;
-  skos:related gsord:Coelestinerinnen ;
-  skos:exactMatch <http://d-nb.info/gnd/4335315-0>, <https://database.factgrid.de/entity/Q640742>, <https://www.wikidata.org/wiki/Q1093546>, <http://viaf.org/viaf/247807713> ;
-  skos:inScheme gsord: .
+# Example top concept
+gsord:a
+    a skos:Concept ;
+    skos:prefLabel "Religious Order A"@en ;
+    skos:inScheme <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> .
 
-gsord:Kartaeuser a skos:Concept ;
-  skos:notation "GSReligiousOrder004" ;
-  skos:prefLabel "Carthusians"@en, "Kartäuser"@de, "Ordo Cartusiensis"@la ;
-  skos:altLabel "OCart"@la ;
-  skos:definition "Vom hl. Bruno von Köln gegründeter Reformorden (1084). Strenges Armuts- und Schweigegebot. Breite Verbreitung in Europa."@de ;
-  skos:broader gsord:Orden_nach_der_Benediktregel ;
-  skos:related gsord:Kartaeuserinnen ;
-  skos:exactMatch <https://d-nb.info/gnd/1017943-4>, <https://www.wikidata.org/wiki/Q220979>, <http://vocab.getty.edu/page/aat/300148065>, <https://database.factgrid.de/entity/Q394850> ;
-  skos:inScheme gsord: .
+# Example concept: Alexianerinnen
+gsord:Alexianerinnen
+    a skos:Concept ;
+    skos:prefLabel "Alexianerinnen"@de ;
+    skos:broader gsord:a ;
+    skos:inScheme <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> ;
+    skos:related gsord:Kartaeuser .
 
-gsord:Brueder_vom_gemeinsamen_Leben a skos:Concept ;
-  skos:notation "GSReligiousOrder046" ;
-  skos:prefLabel "Brethren of the Common Life"@en, "Brüder vom gemeinsamen Leben"@de ;
-  skos:altLabel "Fraterherren"@de, "Kugelherren"@de ;
-  skos:broader gsord:Regularkanoniker, gsord:Semireligiöse_M ;
-  skos:related gsord:Schwestern_vom_gemeinsamen_Leben ;
-  skos:exactMatch <https://database.factgrid.de/entity/Q498922>, <https://d-nb.info/gnd/4008437-1> ;
-  skos:inScheme gsord: .
-
-gsord:Alexianerinnen a skos:Concept ;
-  skos:notation "GSReligiousOrder101" ;
-  skos:prefLabel "Alexian Sisters"@en, "Cellitinnen"@de ;
-  skos:altLabel "Alexianerinnen"@de, "CFA (w)"@la ;
-  skos:definition "Weiblicher Orden aus der Beginenbewegung, tätig in der Krankenpflege; nach der Augustinusregel lebend."@de ;
-  skos:related gsord:Alexianer ;
-  skos:broader gsord:Orden_nach_der_Augustinusregel ;
-  skos:exactMatch <https://d-nb.info/gnd/4212649-6>, <https://database.factgrid.de/entity/Q1195148> ;
-  skos:inScheme gsord: .
-
-gsord:Brudergemeinschaft a skos:Concept ;
-  skos:notation "GSReligiousOrder106" ;
-  skos:prefLabel "Brudergemeinschaft"@de, "Fraternal Orders"@en ;
-  skos:altLabel "Bruderschaft"@de ;
-  skos:exactMatch <https://database.factgrid.de/entity/Q636405> ;
-  skos:topConceptOf gsord: ;
-  skos:inScheme gsord: .
-
-gsord:Franziskanerorden a skos:Concept ;
-  skos:prefLabel "Franziskanerorden"@de ;
-  skos:topConceptOf gsord: ;
-  skos:inScheme gsord: .
+# Example concept: Kartäuser
+gsord:Kartaeuser
+    a skos:Concept ;
+    skos:prefLabel "Kartäuser"@de ;
+    skos:broader gsord:a ;
+    skos:inScheme <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> ;
+    skos:related gsord:Alexianerinnen .
