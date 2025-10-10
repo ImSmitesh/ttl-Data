@@ -471,7 +471,7 @@ gsord:Regularkanoniker a skos:Concept;
  skos:notation "GSReligiousOrder113" ;
  skos:prefLabel "Canonici regulares"@la, "Canons Regular"@en, "Regularkanoniker"@de, "Reguliere kanunniken"@nl ;
  skos:definition "Im Zuge der Gregorianischen Reform bildeten sich im 11. Jahrhundert aus den (unregulierten) Kanonikern die Regularkanoniker heraus, die strengere Regeln anwandten und etwa größeren Wert auf das vita communis – also das Leben in der geistlichen Gemeinschaft – sowie die persönliche Armut legten. Wegweisende Vertreter dieser Richtung waren die Augustiner-Chorherren und die Prämonstratenser."@de ;
- skos:exactMatch <https://database.factgrid.de/wiki/Item:Q640779>
+ skos:exactMatch <https://database.factgrid.de/wiki/Item:Q640779>;
  skos:topConceptOf gsord:.
 
 gsord:Semireligiöse_M a skos:Concept;
