@@ -1,120 +1,80 @@
 @prefix gsord: <https://gsord.germania-sacra.de/resources/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-gsord:a a skos:ConceptScheme ;
-  rdfs:label "WIAG Ordensvokabular"@de ;
-  skos:prefLabel "WIAG Ordensvokabular"@de ;
-  skos:hasTopConcept gsord:Brudergemeinschaft, gsord:Franziskanerorden, gsord:Hospitaliterinnen,
-                     gsord:Semireligiöse_W, gsord:Kreuzherren, gsord:Orden_nach_der_Benediktregel,
-                     gsord:Orden_nach_der_Augustinusregel, gsord:Regularkanoniker,
-                     gsord:Semireligiöse_M, gsord:Mendikantenorden, gsord:Hospitaliter,
-                     gsord:Kapuzinerinnen, gsord:Barmherzige_Brueder .
+gsord: a skos:ConceptScheme ;
+  dct:title "WIAG Ordensvokabular"@de ;
+  dc:creator "Germania Sacra / WIAG Project"@de ;
+  dct:description "Ein kontrolliertes Vokabular religiöser Orden für die Germania Sacra / WIAG-Daten."@de ;
+  dct:created "2024-01-01"^^xsd:date ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  skos:hasTopConcept
+    gsord:Brudergemeinschaft,
+    gsord:Franziskanerorden,
+    gsord:Hospitaliterinnen,
+    gsord:Semireligiöse_W,
+    gsord:Kreuzherren,
+    gsord:Orden_nach_der_Benediktregel,
+    gsord:Orden_nach_der_Augustinusregel,
+    gsord:Regularkanoniker,
+    gsord:Semireligiöse_M,
+    gsord:Mendikantenorden,
+    gsord:Hospitaliter,
+    gsord:Kapuzinerinnen,
+    gsord:Barmherzige_Brueder .
 
 gsord:Coelestiner a skos:Concept ;
   skos:notation "GSReligiousOrder104" ;
   skos:prefLabel "Celestines"@en, "Coelestiner"@de, "Ordo Sancti Benedicti Coelestinensis"@la ;
   skos:altLabel "Cölestiner"@de, "Damianisten"@de, "Einsiedler vom hl. Damian"@de, "OSBCoel"@la ;
-  skos:definition "Bei den Cölestinern handelt es sich um eine vom hl. Pietro del Morrone, dem späteren Papst Coelestin V., gegründete monastische Kongregation nach der Benediktregel..."@de ;
+  skos:definition "Vom hl. Pietro del Morrone (später Papst Coelestin V.) gegründete Benediktinerkongregation. 1263 bestätigt; verbreitet in Italien und Frankreich."@de ;
+  skos:broader gsord:Orden_nach_der_Benediktregel ;
   skos:related gsord:Coelestinerinnen ;
-  skos:broader gsord:Orden_nach_der_Benediktregel ;
-  skos:exactMatch <http://d-nb.info/gnd/4335315-0>,
-                  <https://database.factgrid.de/wiki/Item:Q640742>,
-                  <https://www.wikidata.org/wiki/Q1093546>,
-                  <http://viaf.org/viaf/247807713> ;
-  skos:inScheme gsord:a .
+  skos:exactMatch <http://d-nb.info/gnd/4335315-0>, <https://database.factgrid.de/entity/Q640742>, <https://www.wikidata.org/wiki/Q1093546>, <http://viaf.org/viaf/247807713> ;
+  skos:inScheme gsord: .
 
-gsord:Kartäuser a skos:Concept ;
+gsord:Kartaeuser a skos:Concept ;
   skos:notation "GSReligiousOrder004" ;
-  skos:prefLabel "Carthusians"@en, "Kartuizers"@nl, "Kartäuser"@de, "Ordo Cartusiensis"@la ;
+  skos:prefLabel "Carthusians"@en, "Kartäuser"@de, "Ordo Cartusiensis"@la ;
   skos:altLabel "OCart"@la ;
-  skos:definition "Der Kartäuserorden geht auf den hl. Bruno von Köln (1032–1101) zurück..."@de ;
+  skos:definition "Vom hl. Bruno von Köln gegründeter Reformorden (1084). Strenges Armuts- und Schweigegebot. Breite Verbreitung in Europa."@de ;
   skos:broader gsord:Orden_nach_der_Benediktregel ;
-  skos:related gsord:Kartäuserinnen ;
-  skos:exactMatch <https://d-nb.info/gnd/1017943-4>,
-                  <https://www.wikidata.org/wiki/Q220979>,
-                  <http://vocab.getty.edu/page/aat/300148065>,
-                  <https://database.factgrid.de/entity/Q394850> ;
-  skos:inScheme gsord:a .
+  skos:related gsord:Kartaeuserinnen ;
+  skos:exactMatch <https://d-nb.info/gnd/1017943-4>, <https://www.wikidata.org/wiki/Q220979>, <http://vocab.getty.edu/page/aat/300148065>, <https://database.factgrid.de/entity/Q394850> ;
+  skos:inScheme gsord: .
 
 gsord:Brueder_vom_gemeinsamen_Leben a skos:Concept ;
   skos:notation "GSReligiousOrder046" ;
-  skos:prefLabel "Brethren of the Common Life"@en, "Broeders des gemenen levens"@nl, "Brüder vom gemeinsamen Leben"@de, "Fratres communis vitae"@la ;
-  skos:altLabel "CRVC"@la, "Fraterherren"@de, "Kugelherren"@de ;
+  skos:prefLabel "Brethren of the Common Life"@en, "Brüder vom gemeinsamen Leben"@de ;
+  skos:altLabel "Fraterherren"@de, "Kugelherren"@de ;
   skos:broader gsord:Regularkanoniker, gsord:Semireligiöse_M ;
   skos:related gsord:Schwestern_vom_gemeinsamen_Leben ;
   skos:exactMatch <https://database.factgrid.de/entity/Q498922>, <https://d-nb.info/gnd/4008437-1> ;
-  skos:inScheme gsord:a .
+  skos:inScheme gsord: .
 
 gsord:Alexianerinnen a skos:Concept ;
   skos:notation "GSReligiousOrder101" ;
-  skos:prefLabel "Alexian Sisters"@en, "Cellezusters"@nl, "Cellitinnen"@de ;
-  skos:altLabel "Alexianerinnen"@de, "CFA (w)"@la, "Schwarze Schwestern"@de ;
-  skos:definition "Bei den Cellitinnen bzw. Alexianerinnen handelte es sich um eine weibliche Ordensgemeinschaft..."@de ;
+  skos:prefLabel "Alexian Sisters"@en, "Cellitinnen"@de ;
+  skos:altLabel "Alexianerinnen"@de, "CFA (w)"@la ;
+  skos:definition "Weiblicher Orden aus der Beginenbewegung, tätig in der Krankenpflege; nach der Augustinusregel lebend."@de ;
   skos:related gsord:Alexianer ;
   skos:broader gsord:Orden_nach_der_Augustinusregel ;
   skos:exactMatch <https://d-nb.info/gnd/4212649-6>, <https://database.factgrid.de/entity/Q1195148> ;
-  skos:inScheme gsord:a .
-
-gsord:Redemptoristen a skos:Concept ;
-  skos:notation "GSReligiousOrder087" ;
-  skos:prefLabel "Congregatio Sanctissimi Redemptoris"@la, "Redemptoristen"@de, "Redemptorists"@en ;
-  skos:altLabel "CSsR"@la, "Kongregation des heiligsten Erlösers"@de ;
-  skos:definition "Bei den Redemptoristen handelt es sich um einen Missionsorden, der 1732 in Scala gegründet wurde..."@de ;
-  skos:exactMatch <https://d-nb.info/gnd/2007048-2>, <https://www.wikidata.org/wiki/Q751148>, <https://database.factgrid.de/entity/Q640766> ;
-  skos:inScheme gsord:a .
-
-gsord:Lazaristen a skos:Concept ;
-  skos:notation "GSReligiousOrder080" ;
-  skos:prefLabel "Congregatio Missionis"@la, "Knights of St Lazarus"@en, "Lazarieten"@nl, "Lazaristen"@de ;
-  skos:altLabel "CM"@la, "Vinzentiner"@de ;
-  skos:definition "Die Lazaristen sind eine Gemeinschaft apostolischen Lebens, die 1625 von Vinzenz von Paul gegründet wurde..."@de ;
-  skos:exactMatch <https://d-nb.info/gnd/1024069-X>, <https://www.wikidata.org/wiki/Q849726>, <https://database.factgrid.de/entity/Q1195226> ;
-  skos:inScheme gsord:a .
-
-gsord:Augustinerchorfrauen_BMV a skos:Concept ;
-  skos:notation "GSReligiousOrder049" ;
-  skos:prefLabel "Augustinerchorfrauen B.M.V."@de, "Congregatio Beatae Mariae Virginis"@la ;
-  skos:altLabel "CBMV"@la, "Chorfrauen U. L. F."@de, "Kongregation der allerseligsten Jungfrau"@de, "Welschnonnen"@de ;
-  skos:exactMatch <https://database.factgrid.de/entity/Q498968> ;
-  skos:broader gsord:Augustinerchorfrauen, gsord:Orden_nach_der_Augustinusregel ;
-  skos:inScheme gsord:a .
+  skos:inScheme gsord: .
 
 gsord:Brudergemeinschaft a skos:Concept ;
   skos:notation "GSReligiousOrder106" ;
-  skos:prefLabel "Broederschap"@nl, "Brudergemeinschaft"@de, "Fraternal orders"@en, "Fraternité"@fr ;
+  skos:prefLabel "Brudergemeinschaft"@de, "Fraternal Orders"@en ;
   skos:altLabel "Bruderschaft"@de ;
   skos:exactMatch <https://database.factgrid.de/entity/Q636405> ;
-  skos:topConceptOf gsord:a .
+  skos:topConceptOf gsord: ;
+  skos:inScheme gsord: .
 
 gsord:Franziskanerorden a skos:Concept ;
   skos:prefLabel "Franziskanerorden"@de ;
-  skos:topConceptOf gsord:a .
-
-gsord:Clemensschwestern a skos:Concept ;
-  skos:notation "GSReligiousOrder063" ;
-  skos:prefLabel "Clemensschwestern"@de, "Sisters of Charity of Our Lady of Sorrows"@en ;
-  skos:altLabel "Barmherzige Schwestern von der allerseligsten Jungfrau und schmerzhaften Mutter Maria"@de ;
-  skos:definition "Die Clemensschwestern wurden 1808 von Clemens August von Droste zu Vischering gegründet..."@de ;
-  skos:exactMatch <https://www.wikidata.org/wiki/Q808380>, <https://d-nb.info/gnd/5299650-5>, <https://database.factgrid.de/entity/Q1195149> ;
-  skos:inScheme gsord:a .
-
-gsord:Institut_der_seligen_Jungfrau_Maria a skos:Concept ;
-  skos:notation "GSReligiousOrder066" ;
-  skos:prefLabel "Congregatie van Jezus"@nl, "Congregation of Jesus"@en, "Institut der seligen Jungfrau Maria"@de, "Institutum Beatae Mariae Virginis"@la ;
-  skos:altLabel "Englische Fräulein"@de, "IBMV"@la, "Maria-Ward-Schwestern"@de ;
-  skos:definition "Das Institut der seligen Jungfrau Maria ist ein von Maria Ward gegründeter Frauenorden..."@de ;
-  skos:exactMatch <https://www.wikidata.org/wiki/Q808380>, <https://database.factgrid.de/entity/Q636384> ;
-  skos:broader gsord:Jesuiten ;
-  skos:inScheme gsord:a .
-
-gsord:Maricollen a skos:Concept ;
-  skos:notation "GSReligiousOrder126" ;
-  skos:prefLabel "Mariacolae"@la, "Maricollen"@de, "Maricollen"@en ;
-  skos:altLabel "Maricolen"@nl, "Marienverehrerinnen"@de ;
-  skos:definition "Frauengemeinschaft, die 1663 von Hermannus a St. Norberto gegründet wurde..."@de ;
-  skos:exactMatch <https://www.wikidata.org/wiki/Q2901677>, <https://database.factgrid.de/entity/Q1195228>, <https://d-nb.info/gnd/4542342-8> ;
-  skos:related gsord:Karmeliterinnen ;
-  skos:inScheme gsord:a .
+  skos:topConceptOf gsord: ;
+  skos:inScheme gsord: .
