@@ -146,7 +146,7 @@ gsord:Coelestinerinnen a skos:Concept ;
  skos:exactMatch <https://database.factgrid.de/entity/Q1195153>;
  skos:inScheme gsord:.
 
-gsord: Orden_nach_der_Augustinusregel a skos:Concept ;
+gsord:Orden_nach_der_Augustinusregel a skos:Concept ;
  skos:notation "GSReligiousOrder130" ;
  skos:prefLabel "Augustijnen"@nl, "Orden_nach_der_Augustinusregel"@de, "Augustinian Orders"@en ;
  skos:altLabel "Augustiner"@de, "Augustinergemeinschaft"@de, "Augustinians"@en;
