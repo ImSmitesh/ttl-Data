@@ -322,7 +322,7 @@ gsord:Redemptoristinnen a skos:Concept ;
  skos:exactMatch <https://database.factgrid.de/entity/Q640765> ;
  skos:inScheme gsord:.
 
-gsord:Italienische Annunziatinnen a skos:Concept ;
+gsord:Italienische_Annunziatinnen a skos:Concept ;
  skos:notation "GSReligiousOrder119" ;
  skos:prefLabel "Italienische Annunziatinnen"@de, "Order of the Most Holy Annunciation"@en, "Ordine della Santissima Annunziata"@it ;
  skos:altLabel "Blaue Annanziatinnen"@de ;
