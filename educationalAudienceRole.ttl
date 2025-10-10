@@ -10,14 +10,14 @@
     skos:prefLabel "Germania Sacra: Wiag Religious Orders"@en ;
     skos:definition "A concept scheme for religious orders used in Germania Sacra and Wiag vocabularies."@en ;
     dct:creator "Germania Sacra / Wiag Project" ;
+    dct:publisher "Academy of Sciences and Humanities Göttingen" ;
+    dct:issued "2025-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
     dct:language "de" ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:source <https://germania-sacra.de/> ;
     vann:preferredNamespacePrefix "gsord" ;
-    vann:preferredNamespaceUri <https://gsord.germania-sacra.de/resources/> ;
+    vann:preferredNamespaceUri "https://gsord.germania-sacra.de/resources/" ;
     foaf:homepage <https://germania-sacra.de/> .
-
-
 
 <http://creativecommons.org/licenses/by-sa/4.0/> skos:notation "CC BY-SA 4.0" ;
   skos:prefLabel "Creative Commons Attribution-ShareAlike 4.0"@en, "Creative Commons Namensnennung, Weitergabe unter gleichen Bedingungen 4.0"@de .
