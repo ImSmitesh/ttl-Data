@@ -1,39 +1,44 @@
-@prefix gsord: <https://gsord.germania-sacra.de/resources/> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@base <https://oerworldmap.org/assets/json/sectors/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
 
-gsord: a skos:ConceptScheme;
-  dct:title "Germania Sacra: Wiag Religious Orders"@en;
-  dc:creator "Germania Sacra / Wiag Project"@en;
-  dct:description "A concept scheme for religious orders used in Germania Sacra and Wiag vocabularies."@en;
-  dct:license <https://creativecommons.org/licenses/by/4.0/>;
-  dct:language "de";
-  dct:created "2025-10-10"^^xsd:date;
-  dct:modified "2025-10-10"^^xsd:date;
-  skos:hasTopConcept
-    gsord:a,
-    gsord:Alexianerinnen,
-    gsord:Kartaeuser.
+<>
+    a skos:ConceptScheme ;
+    dct:title "Educational Sectors"@en, "Bildungssektoren"@de ;
+    skos:hasTopConcept <earlyChildhood>, <further>, <general>, <higherEd>, <school>, <vocational> .
 
-# Top Concept A
-gsord:a a skos:Concept;
-  skos:prefLabel "Religious Order A"@en;
-  skos:inScheme gsord:.
+<earlyChildhood>
+    skos:prefLabel "Early Childhood Education"@en, "Frühkindliche Erziehung"@de ;
+    a skos:Concept ;
+    skos:inScheme <> ;
+    skos:topConceptOf <> .
 
-# Alexianerinnen
-gsord:Alexianerinnen a skos:Concept;
-  skos:prefLabel "Alexianerinnen"@de;
-  skos:definition "A specific religious order within the Germania Sacra database."@en;
-  skos:broader gsord:a;
-  skos:related gsord:Kartaeuser;
-  skos:inScheme gsord:.
+<further>
+    skos:prefLabel "Further Education"@en, "Weiterbildung"@de ;
+    a skos:Concept ;
+    skos:inScheme <> ;
+    skos:topConceptOf <> .
 
-# Kartäuser
-gsord:Kartaeuser a skos:Concept;
-  skos:prefLabel "Kartäuser"@de;
-  skos:definition "A specific monastic order within the Germania Sacra database."@en;
-  skos:broader gsord:a;
-  skos:related gsord:Alexianerinnen;
-  skos:inScheme gsord:.
+<general>
+    skos:prefLabel "Cross-sector"@en, "Sektorenübergreifend"@de ;
+    a skos:Concept ;
+    skos:inScheme <> ;
+    skos:topConceptOf <> .
+
+<higherEd>
+    skos:prefLabel "Higher Education"@en, "Hochschule"@de ;
+    a skos:Concept ;
+    skos:inScheme <> ;
+    skos:topConceptOf <> .
+
+<school>
+    skos:prefLabel "School"@en, "Schule"@de ;
+    a skos:Concept ;
+    skos:inScheme <> ;
+    skos:topConceptOf <> .
+
+<vocational>
+    skos:prefLabel "Berufliche Bildung"@de, "Vocational Education"@en ;
+    a skos:Concept ;
+    skos:inScheme <> ;
+    skos:topConceptOf <> .
