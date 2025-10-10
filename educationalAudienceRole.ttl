@@ -3,10 +3,15 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/>.
 
-<http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> a skos:ConceptScheme ;
-  dct:title "Germania Sacra WIAG Orders"@en ;
-  dct:publisher [ skos:prefLabel "Germania Sacra"@de ] ;
-  dct:license <http://creativecommons.org/licenses/by-sa/4.0/> .
+<http://uri.gbv.de/terminology/germania_sacra_wiag_orden/>
+    a skos:ConceptScheme ;
+    skos:prefLabel "Germania Sacra: Wiag Religious Orders"@en ;
+    skos:definition "A concept scheme for religious orders used in Germania Sacra and Wiag vocabularies."@en ;
+    dc:creator "Germania Sacra / Wiag Project" ;
+    dc:language "de" ;
+    dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dc:source <https://germania-sacra.de/> .
+
 
 <http://creativecommons.org/licenses/by-sa/4.0/> skos:notation "CC BY-SA 4.0" ;
   skos:prefLabel "Creative Commons Attribution-ShareAlike 4.0"@en, "Creative Commons Namensnennung, Weitergabe unter gleichen Bedingungen 4.0"@de .
