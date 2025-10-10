@@ -19,61 +19,84 @@ gsord: a skos:ConceptScheme ;
     vann:preferredNamespaceUri "https://gsord.germania-sacra.de/resources/wiagOrdensvokabular/" ;
     skos:hasTopConcept gsord:Coelestiner, gsord:Kartäuser, gsord:Brueder_vom_gemeinsamen_Leben, gsord:Alexianerinnen, gsord:Redemptoristen .
 
-# Top Concepts
-gsord:Coelestiner a skos:Concept ;
-    skos:prefLabel "Celestines"@en, "Coelestiner"@de, "Ordo Sancti Benedicti Coelestinensis"@la ;
-    skos:altLabel "Cölestiner"@de, "Damianisten"@de, "Einsiedler vom hl. Damian"@de, "OSBCoel"@la ;
-    skos:definition "Bei den Cölestinern handelt es sich um eine vom hl. Pietro del Morrone, dem späteren Papst Coelestin V., gegründete monastische Kongregation nach der Benediktregel, deren Mitglieder ein eremitisches und einfaches Leben führten. Sie wurden 1263 durch Papst Urban IV. bestätigt. 1294 schloss Papst Coelestin V. die Franziskaner-Spiritualen den Cölestinern als selbständige Kongregation an, diese wurde jedoch 1295 durch Papst Bonifatius VIII. wieder unterdrückt. Die Ausbreitung der Cölestiner blieb im Wesentlichen auf Italien und Frankreich beschränkt. Im Zuge der Säkularisation wurden die letzten Cölestinerklöster aufgehoben."@de ;
-    skos:related gsord:Coelestinerinnen ;
-    skos:broader gsord:Orden_nach_der_Benediktregel ;
-    skos:exactMatch <http://d-nb.info/gnd/4335315-0> ;
-    skos:exactMatch <https://database.factgrid.de/wiki/Item:Q640742> ;
-    skos:exactMatch <https://www.wikidata.org/wiki/Q1093546> ;
-    skos:exactMatch <http://viaf.org/viaf/247807713> ;
-    skos:inScheme gsord: .
+# Concepts
+gsord:Coelestiner a skos:Concept .
+gsord:Coelestiner skos:prefLabel "Celestines"@en, "Coelestiner"@de, "Ordo Sancti Benedicti Coelestinensis"@la .
+gsord:Coelestiner skos:altLabel "Cölestiner"@de, "Damianisten"@de, "Einsiedler vom hl. Damian"@de, "OSBCoel"@la .
+gsord:Coelestiner skos:definition "Bei den Cölestinern handelt es sich um eine vom hl. Pietro del Morrone, dem späteren Papst Coelestin V., gegründete monastische Kongregation nach der Benediktregel, deren Mitglieder ein eremitisches und einfaches Leben führten. Sie wurden 1263 durch Papst Urban IV. bestätigt. 1294 schloss Papst Coelestin V. die Franziskaner-Spiritualen den Cölestinern als selbständige Kongregation an, diese wurde jedoch 1295 durch Papst Bonifatius VIII. wieder unterdrückt. Die Ausbreitung der Cölestiner blieb im Wesentlichen auf Italien und Frankreich beschränkt. Im Zuge der Säkularisation wurden die letzten Cölestinerklöster aufgehoben."@de .
+gsord:Coelestiner skos:related gsord:Coelestinerinnen .
+gsord:Coelestiner skos:broader gsord:Orden_nach_der_Benediktregel .
+gsord:Coelestiner skos:exactMatch <http://d-nb.info/gnd/4335315-0> .
+gsord:Coelestiner skos:exactMatch <https://database.factgrid.de/wiki/Item:Q640742> .
+gsord:Coelestiner skos:exactMatch <https://www.wikidata.org/wiki/Q1093546> .
+gsord:Coelestiner skos:exactMatch <http://viaf.org/viaf/247807713> .
+gsord:Coelestiner skos:inScheme gsord: .
 
-gsord:Kartäuser a skos:Concept ;
-    skos:prefLabel "Carthusians"@en, "Kartuizers"@nl, "Kartäuser"@de, "Ordo Cartusiensis"@la ;
-    skos:altLabel "OCart"@la ;
-    skos:definition "Der Kartäuserorden geht auf den hl. Bruno von Köln (1032–1101) zurück, der diesen strengen Reformorden 1084 in der Nähe von Chartreuse gründete. Die 1127 verfassten Konstitutionen wurden 1133 von Papst Innozenz II. († 1143) approbiert. Das Klosterleben der Kartäuser ist geprägt durch ein strenges Armuts- und Schweigegebot. Die Mönche sollten in eigenen Häusern oder Zellen alleine leben und kamen nur zu bestimmten Gebetszeiten und zu Sonn- und Feiertagen in der Gemeinschaft zusammen. Im 12. Jahrhundert breitete sich der Kartäuserorden vor allem in Frankreich aus, dann auch in den europäischen Nachbarländern. Der Orden spielte eine wichtige Rolle in der klösterlichen Reformbewegung des 11. und 12. Jahrhunderts."@de ;
-    skos:broader gsord:Orden_nach_der_Benediktregel ;
-    skos:related gsord:Kartäuserinnen ;
-    skos:exactMatch <https://d-nb.info/gnd/1017943-4> ;
-    skos:exactMatch <https://www.wikidata.org/wiki/Q220979> ;
-    skos:exactMatch <http://vocab.getty.edu/page/aat/300148065> ;
-    skos:exactMatch <https://database.factgrid.de/entity/Q394850> ;
-    skos:inScheme gsord: .
+gsord:Kartäuser a skos:Concept .
+gsord:Kartäuser skos:prefLabel "Carthusians"@en, "Kartuizers"@nl, "Kartäuser"@de, "Ordo Cartusiensis"@la .
+gsord:Kartäuser skos:altLabel "OCart"@la .
+gsord:Kartäuser skos:definition "Der Kartäuserorden geht auf den hl. Bruno von Köln (1032–1101) zurück, der diesen strengen Reformorden 1084 in der Nähe von Chartreuse gründete. Die 1127 verfassten Konstitutionen wurden 1133 von Papst Innozenz II. († 1143) approbiert. Das Klosterleben der Kartäuser ist geprägt durch ein strenges Armuts- und Schweigegebot. Die Mönche sollten in eigenen Häusern oder Zellen alleine leben und kamen nur zu bestimmten Gebetszeiten und zu Sonn- und Feiertagen in der Gemeinschaft zusammen. Im 12. Jahrhundert breitete sich der Kartäuserorden vor allem in Frankreich aus, dann auch in den europäischen Nachbarländern. Der Orden spielte eine wichtige Rolle in der klösterlichen Reformbewegung des 11. und 12. Jahrhunderts."@de .
+gsord:Kartäuser skos:broader gsord:Orden_nach_der_Benediktregel .
+gsord:Kartäuser skos:related gsord:Kartäuserinnen .
+gsord:Kartäuser skos:exactMatch <https://d-nb.info/gnd/1017943-4> .
+gsord:Kartäuser skos:exactMatch <https://www.wikidata.org/wiki/Q220979> .
+gsord:Kartäuser skos:exactMatch <http://vocab.getty.edu/page/aat/300148065> .
+gsord:Kartäuser skos:exactMatch <https://database.factgrid.de/entity/Q394850> .
+gsord:Kartäuser skos:inScheme gsord: .
 
-gsord:Brueder_vom_gemeinsamen_Leben a skos:Concept ;
-    skos:prefLabel "Brethren of the Common Life"@en, "Broeders des gemenen levens"@nl, "Brüder vom gemeinsamen Leben"@de, "Fratres communis vitae"@la ;
-    skos:altLabel "CRVC"@la, "Fraterherren"@de, "Kugelherren"@de ;
-    skos:broader gsord:Regularkanoniker ;
-    skos:broader gsord:Semireligiöse_M ;
-    skos:related gsord:Schwestern_vom_gemeinsamen_Leben ;
-    skos:exactMatch <https://database.factgrid.de/entity/Q498922> ;
-    skos:exactMatch <https://d-nb.info/gnd/4008437-1> ;
-    skos:inScheme gsord: .
+gsord:Brueder_vom_gemeinsamen_Leben a skos:Concept .
+gsord:Brueder_vom_gemeinsamen_Leben skos:prefLabel "Brethren of the Common Life"@en, "Broeders des gemenen levens"@nl, "Brüder vom gemeinsamen Leben"@de, "Fratres communis vitae"@la .
+gsord:Brueder_vom_gemeinsamen_Leben skos:altLabel "CRVC"@la, "Fraterherren"@de, "Kugelherren"@de .
+gsord:Brueder_vom_gemeinsamen_Leben skos:broader gsord:Regularkanoniker .
+gsord:Brueder_vom_gemeinsamen_Leben skos:broader gsord:Semireligiöse_M .
+gsord:Brueder_vom_gemeinsamen_Leben skos:related gsord:Schwestern_vom_gemeinsamen_Leben .
+gsord:Brueder_vom_gemeinsamen_Leben skos:exactMatch <https://database.factgrid.de/entity/Q498922> .
+gsord:Brueder_vom_gemeinsamen_Leben skos:exactMatch <https://d-nb.info/gnd/4008437-1> .
+gsord:Brueder_vom_gemeinsamen_Leben skos:inScheme gsord: .
 
-gsord:Alexianerinnen a skos:Concept ;
-    skos:prefLabel "Alexian Sisters"@en, "Cellezusters"@nl, "Cellitinnen"@de ;
-    skos:altLabel "Alexianerinnen"@de, "CFA (w)"@la, "Schwarze Schwestern"@de ;
-    skos:definition "Bei den Cellitinnen bzw. Alexianerinnen handelte es sich um eine weibliche Ordensgemeinschaft, die im späten Mittelalter aus der Beginenbewegung hervorgegangen ist. Wie auch der männliche Zweig lebten die Alexianerinnen gewöhnlich nach der Augustinusregel und widmeten sich vor allem der Krankenpflege. Zu ihrem Hauptverbreitungsgebiet zählen Belgien, die Niederlanden und das Rheinland."@de ;
-    skos:related gsord:Alexianer ;
-    skos:broader gsord:Orden_nach_der_Augustinusregel ;
-    skos:inScheme gsord: .
+gsord:Alexianerinnen a skos:Concept .
+gsord:Alexianerinnen skos:prefLabel "Alexian Sisters"@en, "Cellezusters"@nl, "Cellitinnen"@de .
+gsord:Alexianerinnen skos:altLabel "Alexianerinnen"@de, "CFA (w)"@la, "Schwarze Schwestern"@de .
+gsord:Alexianerinnen skos:definition "Bei den Cellitinnen bzw. Alexianerinnen handelte es sich um eine weibliche Ordensgemeinschaft, die im späten Mittelalter aus der Beginenbewegung hervorgegangen ist. Wie auch der männliche Zweig lebten die Alexianerinnen gewöhnlich nach der Augustinusregel und widmeten sich vor allem der Krankenpflege. Zu ihrem Hauptverbreitungsgebiet zählen Belgien, die Niederlanden und das Rheinland."@de .
+gsord:Alexianerinnen skos:related gsord:Alexianer .
+gsord:Alexianerinnen skos:broader gsord:Orden_nach_der_Augustinusregel .
+gsord:Alexianerinnen skos:inScheme gsord: .
 
-gsord:Redemptoristen a skos:Concept ;
-    skos:prefLabel "Congregatio Sanctissimi Redemptoris"@la, "Redemptoristen"@de, "Redemptorists"@en ;
-    skos:altLabel "CSsR"@la, "Kongregation des heiligsten Erlösers"@de ;
-    skos:definition "Bei den Redemptoristen handelt es sich um einen Missionsorden, der 1732 in Scala (Königreich Neapel) von dem italienischen Theologen Alfons M. de Liguori († 1787) gegründet wurde. Die 1749 approbierte Regel nennt als Bestimmung des Ordens die Nachfolge Jesu, insbesondere durch die Verkündigung des Evangeliums an die religiös 'Verlassenen'. Der Orden breitete sich in Italien, Deutschland und in der Schweiz aus. Das Entgegenkommen gegenüber dem Staatskirchentum führte 1780-1793 zur Spaltung des Ordens, wobei Rom nur die Klöster im Kirchenstaat anerkannte. 1784 traten die Österreicher C. M. Hofbauer und Thaddäus Hübl in den römischen Zweig ein, um ihn jenseits der Alpen zu verbreiten."@de ;
-    skos:inScheme gsord: .
+gsord:Redemptoristen a skos:Concept .
+gsord:Redemptoristen skos:prefLabel "Congregatio Sanctissimi Redemptoris"@la, "Redemptoristen"@de, "Redemptorists"@en .
+gsord:Redemptoristen skos:altLabel "CSsR"@la, "Kongregation des heiligsten Erlösers"@de .
+gsord:Redemptoristen skos:definition "Bei den Redemptoristen handelt es sich um einen Missionsorden, der 1732 in Scala (Königreich Neapel) von dem italienischen Theologen Alfons M. de Liguori († 1787) gegründet wurde. Die 1749 approbierte Regel nennt als Bestimmung des Ordens die Nachfolge Jesu, insbesondere durch die Verkündigung des Evangeliums an die religiös 'Verlassenen'. Der Orden breitete sich in Italien, Deutschland und in der Schweiz aus. Das Entgegenkommen gegenüber dem Staatskirchentum führte 1780-1793 zur Spaltung des Ordens, wobei Rom nur die Klöster im Kirchenstaat anerkannte. 1784 traten die Österreicher C. M. Hofbauer und Thaddäus Hübl in den römischen Zweig ein, um ihn jenseits der Alpen zu verbreiten."@de .
+gsord:Redemptoristen skos:inScheme gsord: .
 
 # Supporting Concepts
-gsord:Regularkanoniker a skos:Concept ; skos:prefLabel "Regularkanoniker"@de ; skos:inScheme gsord: .
-gsord:Semireligiöse_M a skos:Concept ; skos:prefLabel "Semireligiöse Männer"@de ; skos:inScheme gsord: .
-gsord:Schwestern_vom_gemeinsamen_Leben a skos:Concept ; skos:prefLabel "Schwestern vom gemeinsamen Leben"@de ; skos:inScheme gsord: .
-gsord:Coelestinerinnen a skos:Concept ; skos:prefLabel "Coelestinerinnen"@de ; skos:inScheme gsord: .
-gsord:Kartäuserinnen a skos:Concept ; skos:prefLabel "Kartäuserinnen"@de ; skos:inScheme gsord: .
-gsord:Alexianer a skos:Concept ; skos:prefLabel "Alexianer"@de ; skos:inScheme gsord: .
-gsord:Orden_nach_der_Benediktregel a skos:Concept ; skos:prefLabel "Orden nach der Benediktregel"@de ; skos:inScheme gsord: .
-gsord:Orden_nach_der_Augustinusregel a skos:Concept ; skos:prefLabel "Orden nach der Augustinusregel"@de ; skos:inScheme gsord: .
+gsord:Regularkanoniker a skos:Concept .
+gsord:Regularkanoniker skos:prefLabel "Regularkanoniker"@de .
+gsord:Regularkanoniker skos:inScheme gsord: .
+
+gsord:Semireligiöse_M a skos:Concept .
+gsord:Semireligiöse_M skos:prefLabel "Semireligiöse Männer"@de .
+gsord:Semireligiöse_M skos:inScheme gsord: .
+
+gsord:Schwestern_vom_gemeinsamen_Leben a skos:Concept .
+gsord:Schwestern_vom_gemeinsamen_Leben skos:prefLabel "Schwestern vom gemeinsamen Leben"@de .
+gsord:Schwestern_vom_gemeinsamen_Leben skos:inScheme gsord: .
+
+gsord:Coelestinerinnen a skos:Concept .
+gsord:Coelestinerinnen skos:prefLabel "Coelestinerinnen"@de .
+gsord:Coelestinerinnen skos:inScheme gsord: .
+
+gsord:Kartäuserinnen a skos:Concept .
+gsord:Kartäuserinnen skos:prefLabel "Kartäuserinnen"@de .
+gsord:Kartäuserinnen skos:inScheme gsord: .
+
+gsord:Alexianer a skos:Concept .
+gsord:Alexianer skos:prefLabel "Alexianer"@de .
+gsord:Alexianer skos:inScheme gsord: .
+
+gsord:Orden_nach_der_Benediktregel a skos:Concept .
+gsord:Orden_nach_der_Benediktregel skos:prefLabel "Orden nach der Benediktregel"@de .
+gsord:Orden_nach_der_Benediktregel skos:inScheme gsord: .
+
+gsord:Orden_nach_der_Augustinusregel a skos:Concept .
+gsord:Orden_nach_der_Augustinusregel skos:prefLabel "Orden nach der Augustinusregel"@de .
+gsord:Orden_nach_der_Augustinusregel skos:inScheme gsord: .
