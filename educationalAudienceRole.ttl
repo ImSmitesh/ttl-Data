@@ -5,125 +5,116 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 gsord:a a skos:ConceptScheme ;
- rdfs:label "WIAG Ordensvokabular"@de ;
- skos:prefLabel "WIAG Ordensvokabular"@de ;
- skos:hasTopConcept gsord:Brudergemeinschaft, gsord:Franziskanerorden, gsord:Hospitaliterinnen, gsord:Semireligiöse_W, gsord:Kreuzherren, gsord:Orden_nach_der_Benediktregel, gsord:Orden_nach_der_Augustinusregel, gsord:Regularkanoniker, gsord:Semireligiöse_M, gsord:Mendikantenorden, gsord:Hospitaliter, gsord:Kapuzinerinnen, gsord:Barmherzige_Brueder .
+  rdfs:label "WIAG Ordensvokabular"@de ;
+  skos:prefLabel "WIAG Ordensvokabular"@de ;
+  skos:hasTopConcept gsord:Brudergemeinschaft, gsord:Franziskanerorden, gsord:Hospitaliterinnen,
+                     gsord:Semireligiöse_W, gsord:Kreuzherren, gsord:Orden_nach_der_Benediktregel,
+                     gsord:Orden_nach_der_Augustinusregel, gsord:Regularkanoniker,
+                     gsord:Semireligiöse_M, gsord:Mendikantenorden, gsord:Hospitaliter,
+                     gsord:Kapuzinerinnen, gsord:Barmherzige_Brueder .
 
 gsord:Coelestiner a skos:Concept ;
- skos:notation "GSReligiousOrder104";
- skos:prefLabel "Celestines"@en, "Coelestiner"@de, "Ordo Sancti Benedicti Coelestinensis"@la ;
- skos:altLabel "Cölestiner"@de, "Damianisten"@de, "Einsiedler vom hl. Damian"@de, "OSBCoel"@la ;
- skos:definition "Bei den Cölestinern handelt es sich um eine vom hl. Pietro del Morrone, dem späteren Papst Coelestin V., gegründete monastische Kongregation nach der Benediktregel, deren Mitglieder ein eremitisches und einfaches Leben führten. Sie wurden 1263 durch Papst Urban IV. bestätigt. 1294 schloss Papst Coelestin V. die Franziskaner-Spiritualen den Cölestinern als selbständige Kongregation an, diese wurde jedoch 1295 durch Papst Bonifatius VIII. wieder unterdrückt. Die Ausbreitung der Cölestiner blieb im Wesentlichen auf Italien und Frankreich beschränkt. Im Zuge der Säkularisation wurden die letzten Cölestinerklöster aufgehoben."@de ;
- skos:related gsord:Coelestinerinnen ;
- skos:broader gsord:Orden_nach_der_Benediktregel ;
- skos:exactMatch <http://d-nb.info/gnd/4335315-0> ;
- skos:exactMatch <https://https://database.factgrid.de/wiki/Item:Q640742> ;
- skos:exactMatch <https://www.wikidata.org/wiki/Q1093546> ;
- skos:exactMatch <http://viaf.org/viaf/247807713>;
- skos:inScheme gsord:.
+  skos:notation "GSReligiousOrder104" ;
+  skos:prefLabel "Celestines"@en, "Coelestiner"@de, "Ordo Sancti Benedicti Coelestinensis"@la ;
+  skos:altLabel "Cölestiner"@de, "Damianisten"@de, "Einsiedler vom hl. Damian"@de, "OSBCoel"@la ;
+  skos:definition "Bei den Cölestinern handelt es sich um eine vom hl. Pietro del Morrone, dem späteren Papst Coelestin V., gegründete monastische Kongregation nach der Benediktregel..."@de ;
+  skos:related gsord:Coelestinerinnen ;
+  skos:broader gsord:Orden_nach_der_Benediktregel ;
+  skos:exactMatch <http://d-nb.info/gnd/4335315-0>,
+                  <https://database.factgrid.de/wiki/Item:Q640742>,
+                  <https://www.wikidata.org/wiki/Q1093546>,
+                  <http://viaf.org/viaf/247807713> ;
+  skos:inScheme gsord:a .
 
 gsord:Kartäuser a skos:Concept ;
- skos:notation "GSReligiousOrder004" ;
- skos:prefLabel "Carthusians"@en, "Kartuizers"@nl, "Kartäuser"@de, "Ordo Cartusiensis"@la ;
- skos:altLabel "OCart"@la ;
- skos:definition "Der Kartäuserorden geht auf den hl. Bruno von Köln (1032–1101) zurück, der diesen strengen Reformorden 1084 in der Nähe von Chartreuse gründete. Die 1127 verfassten Konstitutionen wurden 1133 von Papst Innozenz II. († 1143) approbiert. Das Klosterleben der Kartäuser ist geprägt durch ein strenges Armuts- und Schweigegebot. Die Mönche sollten in eigenen Häusern oder Zellen alleine leben und kamen nur zu bestimmten Gebetszeiten und zu Sonn- und Feiertagen in der Gemeinschaft zusammen. Im 12. Jahrhundert breitete sich der Kartäuserorden vor allem in Frankreich aus, dann auch in den europäischen Nachbarländern. Der Orden spielte eine wichtige Rolle in der klösterlichen Reformbewegung des 11. und 12. Jahrhunderts."@de ;
- skos:broader gsord:Orden_nach_der_Benediktregel;
- skos:related gsord:Kartäuserinnen;
- skos:exactMatch <https://d-nb.info/gnd/1017943-4>;
- skos:exactMatch <https://www.wikidata.org/wiki/Q220979>;
- skos:exactMatch <http://vocab.getty.edu/page/aat/300148065>;
- skos:exactMatch <https://database.factgrid.de/entity/Q394850>;
- skos:inScheme gsord:.
+  skos:notation "GSReligiousOrder004" ;
+  skos:prefLabel "Carthusians"@en, "Kartuizers"@nl, "Kartäuser"@de, "Ordo Cartusiensis"@la ;
+  skos:altLabel "OCart"@la ;
+  skos:definition "Der Kartäuserorden geht auf den hl. Bruno von Köln (1032–1101) zurück..."@de ;
+  skos:broader gsord:Orden_nach_der_Benediktregel ;
+  skos:related gsord:Kartäuserinnen ;
+  skos:exactMatch <https://d-nb.info/gnd/1017943-4>,
+                  <https://www.wikidata.org/wiki/Q220979>,
+                  <http://vocab.getty.edu/page/aat/300148065>,
+                  <https://database.factgrid.de/entity/Q394850> ;
+  skos:inScheme gsord:a .
 
 gsord:Brueder_vom_gemeinsamen_Leben a skos:Concept ;
- skos:notation "GSReligiousOrder046" ;
- skos:prefLabel "Brethren of the Common Life"@en, "Broeders des gemenen levens"@nl, "Brüder vom gemeinsamen Leben"@de, "Fratres communis vitae"@la ;
- skos:altLabel "CRVC"@la, "Fraterherren"@de, "Kugelherren"@de ;
- skos:broader gsord:Regularkanoniker;
- skos:broader gsord:Semireligiöse_M;
- skos:related gsord:Schwestern_vom_gemeinsamen_Leben;
- skos:exactMatch <https://database.factgrid.de/entity/Q498922>;
- skos:exactMatch <https://d-nb.info/gnd/4008437-1>;
- skos:inScheme gsord:.
+  skos:notation "GSReligiousOrder046" ;
+  skos:prefLabel "Brethren of the Common Life"@en, "Broeders des gemenen levens"@nl, "Brüder vom gemeinsamen Leben"@de, "Fratres communis vitae"@la ;
+  skos:altLabel "CRVC"@la, "Fraterherren"@de, "Kugelherren"@de ;
+  skos:broader gsord:Regularkanoniker, gsord:Semireligiöse_M ;
+  skos:related gsord:Schwestern_vom_gemeinsamen_Leben ;
+  skos:exactMatch <https://database.factgrid.de/entity/Q498922>, <https://d-nb.info/gnd/4008437-1> ;
+  skos:inScheme gsord:a .
 
 gsord:Alexianerinnen a skos:Concept ;
- skos:notation "GSReligiousOrder101" ;
- skos:prefLabel "Alexian Sisters"@en, "Cellezusters"@nl, "Cellitinnen"@de ;
- skos:altLabel "Alexianerinnen"@de, "CFA (w)"@la, "Schwarze Schwestern"@de ;
- skos:definition "Bei den Cellitinnen bzw. Alexianerinnen handelte es sich um eine weibliche Ordensgemeinschaft, die im späten Mittelalter aus der Beginenbewegung hervorgegangen ist. Wie auch der männliche Zweig lebten die Alexianerinnen gewöhnlich nach der Augustinusregel und widmeten sich vor allem der Krankenpflege. Zu ihrem Hauptverbreitungsgebiet zählen Belgien, die Niederlanden und das Rheinland."@de ;
- skos:related gsord:Alexianer;
- skos:broader gsord:Orden_nach_der_Augustinusregel ;
- skos:exactMatch <https://d-nb.info/gnd/4212649-6> ;
- skos:exactMatch <https://database.factgrid.de/entity/Q1195148> ;
- skos:inScheme gsord:.
+  skos:notation "GSReligiousOrder101" ;
+  skos:prefLabel "Alexian Sisters"@en, "Cellezusters"@nl, "Cellitinnen"@de ;
+  skos:altLabel "Alexianerinnen"@de, "CFA (w)"@la, "Schwarze Schwestern"@de ;
+  skos:definition "Bei den Cellitinnen bzw. Alexianerinnen handelte es sich um eine weibliche Ordensgemeinschaft..."@de ;
+  skos:related gsord:Alexianer ;
+  skos:broader gsord:Orden_nach_der_Augustinusregel ;
+  skos:exactMatch <https://d-nb.info/gnd/4212649-6>, <https://database.factgrid.de/entity/Q1195148> ;
+  skos:inScheme gsord:a .
 
 gsord:Redemptoristen a skos:Concept ;
- skos:notation "GSReligiousOrder087" ;
- skos:prefLabel "Congregatio Sanctissimi Redemptoris"@la, "Redemptoristen"@de, "Redemptorists"@en ;
- skos:altLabel "CSsR"@la, "Kongregation des heiligsten Erlösers"@de ;
- skos:definition "Bei den Redemptoristen handelt es sich um einen Missionsorden, der 1732 in Scala (Königreich Neapel) von dem italienischen Theologen Alfons M. de Liguori († 1787) gegründet wurde. Die 1749 approbierte Regel nennt als Bestimmung des Ordens die Nachfolge Jesu, insbesondere durch die Verkündigung des Evangeliums an die religiös \"Verlassenen\". Der Orden breitete sich in Italien, Deutschland und in der Schweiz aus. Das Entgegenkommen gegenüber dem Staatskirchentum führte 1780-1793 zur Spaltung des Ordens, wobei Rom nur die Klöster im Kirchenstaat anerkannte. 1784 traten die Österreicher C. M. Hofbauer und Thaddäus Hübl in den römischen Zweig ein, um ihn jenseits der Alpen zu verbreiten."@de ; 
- skos:exactMatch <https://d-nb.info/gnd/2007048-2> ;
- skos:exactMatch <https://www.wikidata.org/wiki/Q751148> ;
- skos:exactMatch <https://database.factgrid.de/entity/Q640766> ;
- skos:inScheme gsord:.
+  skos:notation "GSReligiousOrder087" ;
+  skos:prefLabel "Congregatio Sanctissimi Redemptoris"@la, "Redemptoristen"@de, "Redemptorists"@en ;
+  skos:altLabel "CSsR"@la, "Kongregation des heiligsten Erlösers"@de ;
+  skos:definition "Bei den Redemptoristen handelt es sich um einen Missionsorden, der 1732 in Scala gegründet wurde..."@de ;
+  skos:exactMatch <https://d-nb.info/gnd/2007048-2>, <https://www.wikidata.org/wiki/Q751148>, <https://database.factgrid.de/entity/Q640766> ;
+  skos:inScheme gsord:a .
 
 gsord:Lazaristen a skos:Concept ;
- skos:notation "GSReligiousOrder080" ;
- skos:prefLabel "Congregatio Missionis"@la, "Knights of St Lazarus"@en, "Lazarieten"@nl, "Lazaristen"@de ;
- skos:altLabel "CM"@la, "Vinzentiner"@de ;
- skos:definition "Die Lazaristen sind eine Gemeinschaft apostolischen Lebens, die 1625 von Vinzenz von Paul zur Evangelisierung der französischen Landbevölkerung gegründet und 1633 von Urban VIII. bestätigt wurde. Namensgebend ist das Priorat vom hl. Lazarus in Paris, in dem sich seit 1632 das Mutterhaus befindet. Die Regel der Gemeinschaft verfasste Vinzenz selbst. Die Lazaristen befassten sich mit Exerzitien, Priesterausbildung, Seelsorge an Gefangenen und Galeerensklaven sowie der auswärtigen Mission. Die Lazaristen breiteten sich über Frankreich hinaus auch über die Grenzen Europas hinweg aus. Während der Französischen Revolution wurde das Mutterhaus zerstört und die Gemeinschaft aufgelöst. Im 19. Jahrhundert wurde der Orden wiederhergestellt."@de ;
- skos:exactMatch <https://d-nb.info/gnd/1024069-X>;
- skos:exactMatch <https://www.wikidata.org/wiki/Q849726>;
- skos:exactMatch <https://database.factgrid.de/entity/Q1195226>;
- skos:inScheme gsord:.
+  skos:notation "GSReligiousOrder080" ;
+  skos:prefLabel "Congregatio Missionis"@la, "Knights of St Lazarus"@en, "Lazarieten"@nl, "Lazaristen"@de ;
+  skos:altLabel "CM"@la, "Vinzentiner"@de ;
+  skos:definition "Die Lazaristen sind eine Gemeinschaft apostolischen Lebens, die 1625 von Vinzenz von Paul gegründet wurde..."@de ;
+  skos:exactMatch <https://d-nb.info/gnd/1024069-X>, <https://www.wikidata.org/wiki/Q849726>, <https://database.factgrid.de/entity/Q1195226> ;
+  skos:inScheme gsord:a .
 
 gsord:Augustinerchorfrauen_BMV a skos:Concept ;
- skos:notation "GSReligiousOrder049" ;
- skos:prefLabel "Augustinerchorfrauen B.M.V."@de, "Congregatio Beatae Mariae Virginis"@la ;
- skos:altLabel "CBMV"@la, "Chorfrauen U. L. F."@de, "Kongregation der allerseligsten Jungfrau"@de, "Welschnonnen"@de ;
- skos:exactMatch <https://database.factgrid.de/entity/Q498968>;
- skos:broader gsord:Augustinerchorfrauen;
- skos:broader gsord:Orden_nach_der_Augustinusregel;
- skos:inScheme gsord:.
+  skos:notation "GSReligiousOrder049" ;
+  skos:prefLabel "Augustinerchorfrauen B.M.V."@de, "Congregatio Beatae Mariae Virginis"@la ;
+  skos:altLabel "CBMV"@la, "Chorfrauen U. L. F."@de, "Kongregation der allerseligsten Jungfrau"@de, "Welschnonnen"@de ;
+  skos:exactMatch <https://database.factgrid.de/entity/Q498968> ;
+  skos:broader gsord:Augustinerchorfrauen, gsord:Orden_nach_der_Augustinusregel ;
+  skos:inScheme gsord:a .
 
-gsord:Brudergemeinschaft a skos:Concept;
- skos:notation "GSReligiousOrder106" ;
- skos:prefLabel "Broederschap"@nl, "Brudergemeinschaft"@de, "Fraternal orders"@en, "Fraternité"@fr ;
- skos:altLabel "Bruderschaft"@de ;
- skos:exactMatch <https://database.factgrid.de/entity/Q636405>;
- skos:topConceptOf gsord:.
+gsord:Brudergemeinschaft a skos:Concept ;
+  skos:notation "GSReligiousOrder106" ;
+  skos:prefLabel "Broederschap"@nl, "Brudergemeinschaft"@de, "Fraternal orders"@en, "Fraternité"@fr ;
+  skos:altLabel "Bruderschaft"@de ;
+  skos:exactMatch <https://database.factgrid.de/entity/Q636405> ;
+  skos:topConceptOf gsord:a .
 
-gsord:Franziskanerorden a skos:Concept;
- skos:prefLabel "Franziskanerorden"@de ;
- skos:topConceptOf gsord:.
+gsord:Franziskanerorden a skos:Concept ;
+  skos:prefLabel "Franziskanerorden"@de ;
+  skos:topConceptOf gsord:a .
 
 gsord:Clemensschwestern a skos:Concept ;
- skos:notation "GSReligiousOrder063" ;
- skos:prefLabel "Clemensschwestern"@de, "Sisters of Charity of Our Lady of Sorrows"@en ;
- skos:altLabel "Barmherzige Schwestern von der allerseligsten Jungfrau und schmerzhaften Mutter Maria"@de ;
- skos:definition "Die Clemensschwestern wurden 1808 vom damaligen Generalvikar Clemens August von Droste zu Vischering in Münster gegründet. Sie waren die erste deutsche Kongregation nach der Säkularisation. Die Schwestern arbeiteten in der Krankenpflege und Erziehung und wirkten hauptsächlich im Bistum Münster und den angrenzenden Diözesen."@de ;
- skos:exactMatch <https://www.wikidata.org/wiki/Q808380>;
- skos:exactMatch <https://d-nb.info/gnd/5299650-5>;
- skos:exactMatch <https://database.factgrid.de/entity/Q1195149>;
- skos:inScheme gsord:.
+  skos:notation "GSReligiousOrder063" ;
+  skos:prefLabel "Clemensschwestern"@de, "Sisters of Charity of Our Lady of Sorrows"@en ;
+  skos:altLabel "Barmherzige Schwestern von der allerseligsten Jungfrau und schmerzhaften Mutter Maria"@de ;
+  skos:definition "Die Clemensschwestern wurden 1808 von Clemens August von Droste zu Vischering gegründet..."@de ;
+  skos:exactMatch <https://www.wikidata.org/wiki/Q808380>, <https://d-nb.info/gnd/5299650-5>, <https://database.factgrid.de/entity/Q1195149> ;
+  skos:inScheme gsord:a .
 
 gsord:Institut_der_seligen_Jungfrau_Maria a skos:Concept ;
- skos:notation "GSReligiousOrder066" ;
- skos:prefLabel "Congregatie van Jezus"@nl, "Congregation of Jesus"@en, "Institut der seligen Jungfrau Maria"@de, "Institutum Beatae Mariae Virginis"@la ;
- skos:altLabel "Englische Fräulein"@de, "IBMV"@la, "Maria-Ward-Schwestern"@de ;
- skos:definition "Das Institut der seligen Jungfrau Maria ist ein von Maria Ward (1585-1645) gegründeter Frauenorden. Der ersten Gründung 1609/10 in St. Omer folgten mehrere weitere Gründungen von Instituten, in denen die Ordensregel der Jesuiten gelten sollten und die der religiösen Unterweisung und dem Unterricht (Lesen, Schreiben, Rechnen) dienten. Die ersten Gründungen dienten hierbei dezidiert der Unterrichtung von katholischen Exil-Engländerinnen auf dem Kontinent. Anfangs von weltlichen und geistlichen Fürsten gefördert, geriet Maria Ward beim Versuch, ihre Institut vom Papst als Orden anerkennen zu lassen, in heftige Konflikte um bischöfliche Jurisdiktion und dem Zweck von Frauenorden. Den Englischen Fräulein wurden von Urban VIII. durch die Bulle 'Pastoralis Romani Pontificis' der Zusammenschluss als Orden verboten. Als 'weltliche' Lehrinstitute bestand die Gemeinschaft fort; 1703 wurden ihre Regel vom Papst approbiert, 1748/1749 wurde das Amt der Generaloberin päpstlich anerkannt, sämtliche Erinnerung an Maria Ward sollte jedoch unterbleiben."@de ;
- skos:exactMatch <https://www.wikidata.org/wiki/Q808380>;
- skos:exactMatch <https://database.factgrid.de/entity/Q636384>;
- skos:broader gsord:Jesuiten;
- skos:inScheme gsord:.
+  skos:notation "GSReligiousOrder066" ;
+  skos:prefLabel "Congregatie van Jezus"@nl, "Congregation of Jesus"@en, "Institut der seligen Jungfrau Maria"@de, "Institutum Beatae Mariae Virginis"@la ;
+  skos:altLabel "Englische Fräulein"@de, "IBMV"@la, "Maria-Ward-Schwestern"@de ;
+  skos:definition "Das Institut der seligen Jungfrau Maria ist ein von Maria Ward gegründeter Frauenorden..."@de ;
+  skos:exactMatch <https://www.wikidata.org/wiki/Q808380>, <https://database.factgrid.de/entity/Q636384> ;
+  skos:broader gsord:Jesuiten ;
+  skos:inScheme gsord:a .
 
 gsord:Maricollen a skos:Concept ;
- skos:notation "GSReligiousOrder126" ;
- skos:prefLabel "Mariacolae"@la, "Maricollen"@de, "Maricollen"@en ;
- skos:altLabel "Maricolen"@nl, "Marienverehrerinnen"@de ;
- skos:definition "Frauengemeinschaft, die 1663 von dem Unbeschuhten Karmeliten Hermannus a St. Norberto und der Begine Anna Puttermans in Dendermonde gegründet wurde. Von Dendermonde aus verbreiteten sich die Maricollen in kurzer Zeit in den meisten großen Städten Flanderns. Seit 1672 sind sie dem Karmeliterorden zugeordnet, nach dessen Leitlinien sie leben. Die Maricollen widmen sich vor allem der Erziehung und caritativen Aufgaben."@de ;
- skos:exactMatch <https://www.wikidata.org/wiki/Q2901677>;
- skos:exactMatch <https://database.factgrid.de/entity/Q1195228>;
- skos:exactMatch <https://d-nb.info/gnd/4542342-8>;
- skos:related gsord:Karmeliterinnen;
- skos:inScheme gsord:.
+  skos:notation "GSReligiousOrder126" ;
+  skos:prefLabel "Mariacolae"@la, "Maricollen"@de, "Maricollen"@en ;
+  skos:altLabel "Maricolen"@nl, "Marienverehrerinnen"@de ;
+  skos:definition "Frauengemeinschaft, die 1663 von Hermannus a St. Norberto gegründet wurde..."@de ;
+  skos:exactMatch <https://www.wikidata.org/wiki/Q2901677>, <https://database.factgrid.de/entity/Q1195228>, <https://d-nb.info/gnd/4542342-8> ;
+  skos:related gsord:Karmeliterinnen ;
+  skos:inScheme gsord:a .
