@@ -13,98 +13,27 @@ gsord: a skos:ConceptScheme;
   dct:created "2025-10-10"^^xsd:date;
   dct:modified "2025-10-10"^^xsd:date;
   skos:hasTopConcept
-    gsord:Orden_nach_der_Benediktregel,
-    gsord:Orden_nach_der_Augustinusregel,
-    gsord:Regularkanoniker,
-    gsord:Semireligiöse_M,
-    gsord:Semireligiöse_W,
-    gsord:Mendikantenorden,
-    gsord:Hospitaliter,
-    gsord:Kapuzinerinnen,
-    gsord:Barmherzige_Brueder,
-    gsord:Franziskanerorden,
+    gsord:a,
     gsord:Alexianerinnen,
-    gsord:Kartaeuser,
-    gsord:Brudergemeinschaft.
+    gsord:Kartaeuser.
 
-# Orden nach der Benediktregel
-gsord:Orden_nach_der_Benediktregel a skos:Concept;
-  skos:prefLabel "Orden nach der Benediktregel"@de;
-  skos:definition "Religious orders following the Benedictine rule."@en;
-  skos:inScheme gsord:.
-
-# Orden nach der Augustinusregel
-gsord:Orden_nach_der_Augustinusregel a skos:Concept;
-  skos:prefLabel "Orden nach der Augustinusregel"@de;
-  skos:definition "Religious orders following the Augustinian rule."@en;
-  skos:inScheme gsord:.
-
-# Regularkanoniker
-gsord:Regularkanoniker a skos:Concept;
-  skos:prefLabel "Regularkanoniker"@de;
-  skos:definition "Canons Regular, clergy living in community under a rule."@en;
-  skos:inScheme gsord:.
-
-# Semireligiöse Männer
-gsord:Semireligiöse_M a skos:Concept;
-  skos:prefLabel "Semireligiöse Männer"@de;
-  skos:definition "Semi-religious male orders with partial monastic life."@en;
-  skos:inScheme gsord:.
-
-# Semireligiöse Frauen
-gsord:Semireligiöse_W a skos:Concept;
-  skos:prefLabel "Semireligiöse Frauen"@de;
-  skos:definition "Semi-religious female orders with partial monastic life."@en;
-  skos:inScheme gsord:.
-
-# Mendikantenorden
-gsord:Mendikantenorden a skos:Concept;
-  skos:prefLabel "Mendikantenorden"@de;
-  skos:definition "Mendicant orders focused on preaching and poverty."@en;
-  skos:inScheme gsord:.
-
-# Hospitaliter
-gsord:Hospitaliter a skos:Concept;
-  skos:prefLabel "Hospitaliter"@de;
-  skos:definition "Hospital orders dedicated to care and hospitality."@en;
-  skos:inScheme gsord:.
-
-# Kapuzinerinnen
-gsord:Kapuzinerinnen a skos:Concept;
-  skos:prefLabel "Kapuzinerinnen"@de;
-  skos:definition "Female Capuchin religious orders."@en;
-  skos:inScheme gsord:.
-
-# Barmherzige Brüder
-gsord:Barmherzige_Brueder a skos:Concept;
-  skos:prefLabel "Barmherzige Brüder"@de;
-  skos:definition "Brothers dedicated to charitable works and care for the sick."@en;
-  skos:inScheme gsord:.
-
-# Franziskanerorden
-gsord:Franziskanerorden a skos:Concept;
-  skos:prefLabel "Franziskanerorden"@de;
-  skos:definition "Franciscan order following the rule of St. Francis of Assisi."@en;
+# Top Concept A
+gsord:a a skos:Concept;
+  skos:prefLabel "Religious Order A"@en;
   skos:inScheme gsord:.
 
 # Alexianerinnen
 gsord:Alexianerinnen a skos:Concept;
   skos:prefLabel "Alexianerinnen"@de;
-  skos:definition "A female religious order originating from the Beguine movement."@en;
-  skos:broader gsord:Orden_nach_der_Augustinusregel;
-  skos:related gsord:Alexianer;
+  skos:definition "A specific religious order within the Germania Sacra database."@en;
+  skos:broader gsord:a;
+  skos:related gsord:Kartaeuser;
   skos:inScheme gsord:.
 
 # Kartäuser
 gsord:Kartaeuser a skos:Concept;
   skos:prefLabel "Kartäuser"@de;
-  skos:definition "A monastic order founded by St. Bruno of Cologne in 1084."@en;
-  skos:broader gsord:Orden_nach_der_Benediktregel;
-  skos:related gsord:Kartaeuserinnen;
-  skos:inScheme gsord:.
-
-# Brudergemeinschaft
-gsord:Brudergemeinschaft a skos:Concept;
-  skos:prefLabel "Brudergemeinschaft"@de;
-  skos:definition "Brotherhood communities within Germania Sacra."@en;
+  skos:definition "A specific monastic order within the Germania Sacra database."@en;
+  skos:broader gsord:a;
+  skos:related gsord:Alexianerinnen;
   skos:inScheme gsord:.
