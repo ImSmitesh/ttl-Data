@@ -309,7 +309,7 @@ gsord:Boehmische_Kreuzherren a skos:Concept ;
  skos:prefLabel "Böhmische Kreuzherren"@de, "Knights of the Cross with the Red Star"@en, "Orde van het Kruis met de Rode Ster"@nl, "Ordo militaris Crucigerorum cum rubea stella"@la ;
  skos:altLabel "Kreuzherren mit dem roten Stern"@de ;
  skos:definition "Die Böhmischen Kreuzherren waren ursprünglich eine Hospitalbrüderschaft, die von Agnes von Böhmen 1232 ein Spital und eine Kirche in Prag erhielt. 1237 wurde die Gemeinschaft von Papst Gregor IX. als Regularkanonikerorden anerkannt, die im Folgenden in Böhmen, Mähren, Schlesien und Polen Verbreitung fand. Der Dienst im Hospital rückte im 15. Jahrhundert weiter in den Hintergrund, während die Seelsorge an Gewicht gewann. Größte Blüte um 1400, schwere Einbußen in den Zeiten der Hussiten und der Reformation."@de ;
- skos:broader gsord:Regularkanoniker;
+ skos:broader gsord:Regularkanoniker ;
  skos:exactMatch <https://database.factgrid.de/entity/Q640743> ;
  skos:inScheme gsord:.
 
