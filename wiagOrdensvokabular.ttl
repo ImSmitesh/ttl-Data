@@ -7,7 +7,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-# ConceptScheme
+# Concept Scheme
 gsord: a skos:ConceptScheme ;
     dct:title "WIAG Ordensvokabular"@de ;
     dc:creator "WIAG Project"@de ;
@@ -68,9 +68,12 @@ gsord:Redemptoristen a skos:Concept ;
     skos:definition "Bei den Redemptoristen handelt es sich um einen Missionsorden, der 1732 in Scala (Königreich Neapel) von dem italienischen Theologen Alfons M. de Liguori († 1787) gegründet wurde. Die 1749 approbierte Regel nennt als Bestimmung des Ordens die Nachfolge Jesu, insbesondere durch die Verkündigung des Evangeliums an die religiös 'Verlassenen'. Der Orden breitete sich in Italien, Deutschland und in der Schweiz aus. Das Entgegenkommen gegenüber dem Staatskirchentum führte 1780-1793 zur Spaltung des Ordens, wobei Rom nur die Klöster im Kirchenstaat anerkannte. 1784 traten die Österreicher C. M. Hofbauer und Thaddäus Hübl in den römischen Zweig ein, um ihn jenseits der Alpen zu verbreiten."@de ;
     skos:inScheme gsord: .
 
-# Required Concepts to satisfy skos:broader / skos:related
+# Supporting Concepts
 gsord:Regularkanoniker a skos:Concept ; skos:prefLabel "Regularkanoniker"@de ; skos:inScheme gsord: .
 gsord:Semireligiöse_M a skos:Concept ; skos:prefLabel "Semireligiöse Männer"@de ; skos:inScheme gsord: .
 gsord:Schwestern_vom_gemeinsamen_Leben a skos:Concept ; skos:prefLabel "Schwestern vom gemeinsamen Leben"@de ; skos:inScheme gsord: .
 gsord:Coelestinerinnen a skos:Concept ; skos:prefLabel "Coelestinerinnen"@de ; skos:inScheme gsord: .
-gsord:Kartäuserinnen a skos:Concept ; skos
+gsord:Kartäuserinnen a skos:Concept ; skos:prefLabel "Kartäuserinnen"@de ; skos:inScheme gsord: .
+gsord:Alexianer a skos:Concept ; skos:prefLabel "Alexianer"@de ; skos:inScheme gsord: .
+gsord:Orden_nach_der_Benediktregel a skos:Concept ; skos:prefLabel "Orden nach der Benediktregel"@de ; skos:inScheme gsord: .
+gsord:Orden_nach_der_Augustinusregel a skos:Concept ; skos:prefLabel "Orden nach der Augustinusregel"@de ; skos:inScheme gsord: .
