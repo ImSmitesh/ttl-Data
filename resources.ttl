@@ -4,36 +4,109 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+# Concept Scheme
 gsord: a skos:ConceptScheme;
-  dct:title "Germania Sacra: Wiag Religious Orders"@en;
+  dct:title "WIAG Ordensvokabular"@de;
   dc:creator "Germania Sacra / Wiag Project"@en;
-  dct:description "A concept scheme for religious orders used in Germania Sacra and Wiag vocabularies."@en;
+  dct:description "Ein Vokabular zu religiösen Orden, verwendet in Germania Sacra."@de;
   dct:license <https://creativecommons.org/licenses/by/4.0/>;
   dct:language "de";
   dct:created "2025-10-10"^^xsd:date;
   dct:modified "2025-10-10"^^xsd:date;
   skos:hasTopConcept
-    gsord:a,
-    gsord:Alexianerinnen,
-    gsord:Kartaeuser.
+    gsord:Brudergemeinschaft,
+    gsord:Franziskanerorden,
+    gsord:Hospitaliterinnen,
+    gsord:Semireligiöse_W,
+    gsord:Kreuzherren,
+    gsord:Orden_nach_der_Benediktregel,
+    gsord:Orden_nach_der_Augustinusregel,
+    gsord:Regularkanoniker,
+    gsord:Semireligiöse_M,
+    gsord:Mendikantenorden,
+    gsord:Hospitaliter,
+    gsord:Kapuzinerinnen,
+    gsord:Barmherzige_Brueder.
 
-# Top Concept A
-gsord:a a skos:Concept;
-  skos:prefLabel "Religious Order A"@en;
+# Coelestiner
+gsord:Coelestiner a skos:Concept;
+  skos:prefLabel "Celestines"@en, "Coelestiner"@de, "Ordo Sancti Benedicti Coelestinensis"@la;
+  skos:altLabel "Cölestiner"@de, "Damianisten"@de, "Einsiedler vom hl. Damian"@de, "OSBCoel"@la;
+  skos:definition "Bei den Cölestinern handelt es sich um eine vom hl. Pietro del Morrone gegründete monastische Kongregation nach der Benediktregel."@de;
+  skos:broader gsord:Orden_nach_der_Benediktregel;
+  skos:related gsord:Coelestinerinnen;
+  skos:exactMatch <http://d-nb.info/gnd/4335315-0>;
+  skos:exactMatch <https://database.factgrid.de/wiki/Item:Q640742>;
+  skos:exactMatch <https://www.wikidata.org/wiki/Q1093546>;
+  skos:exactMatch <http://viaf.org/viaf/247807713>;
+  skos:inScheme gsord:.
+
+# Kartäuser
+gsord:Kartäuser a skos:Concept;
+  skos:prefLabel "Carthusians"@en, "Kartuizers"@nl, "Kartäuser"@de, "Ordo Cartusiensis"@la;
+  skos:altLabel "OCart"@la;
+  skos:definition "Der Kartäuserorden geht auf den hl. Bruno von Köln zurück, geprägt durch strenges Armuts- und Schweigegebot."@de;
+  skos:broader gsord:Orden_nach_der_Benediktregel;
+  skos:related gsord:Kartäuserinnen;
+  skos:exactMatch <https://d-nb.info/gnd/1017943-4>;
+  skos:exactMatch <https://www.wikidata.org/wiki/Q220979>;
+  skos:exactMatch <http://vocab.getty.edu/page/aat/300148065>;
+  skos:exactMatch <https://database.factgrid.de/entity/Q394850>;
+  skos:inScheme gsord:.
+
+# Brüder vom gemeinsamen Leben
+gsord:Brueder_vom_gemeinsamen_Leben a skos:Concept;
+  skos:prefLabel "Brethren of the Common Life"@en, "Broeders des gemenen levens"@nl, "Brüder vom gemeinsamen Leben"@de, "Fratres communis vitae"@la;
+  skos:altLabel "CRVC"@la, "Fraterherren"@de, "Kugelherren"@de;
+  skos:broader gsord:Regularkanoniker;
+  skos:broader gsord:Semireligiöse_M;
+  skos:related gsord:Schwestern_vom_gemeinsamen_Leben;
+  skos:exactMatch <https://database.factgrid.de/entity/Q498922>;
+  skos:exactMatch <https://d-nb.info/gnd/4008437-1>;
   skos:inScheme gsord:.
 
 # Alexianerinnen
 gsord:Alexianerinnen a skos:Concept;
-  skos:prefLabel "Alexianerinnen"@de;
-  skos:definition "A specific religious order within the Germania Sacra database."@en;
-  skos:broader gsord:a;
-  skos:related gsord:Kartaeuser;
+  skos:prefLabel "Alexian Sisters"@en, "Cellezusters"@nl, "Cellitinnen"@de;
+  skos:altLabel "Alexianerinnen"@de, "CFA (w)"@la, "Schwarze Schwestern"@de;
+  skos:definition "Bei den Cellitinnen bzw. Alexianerinnen handelt es sich um eine weibliche Ordensgemeinschaft nach der Augustinusregel."@de;
+  skos:broader gsord:Orden_nach_der_Augustinusregel;
+  skos:related gsord:Alexianer;
+  skos:exactMatch <https://d-nb.info/gnd/4212649-6>;
+  skos:exactMatch <https://database.factgrid.de/entity/Q1195148>;
   skos:inScheme gsord:.
 
-# Kartäuser
-gsord:Kartaeuser a skos:Concept;
-  skos:prefLabel "Kartäuser"@de;
-  skos:definition "A specific monastic order within the Germania Sacra database."@en;
-  skos:broader gsord:a;
-  skos:related gsord:Alexianerinnen;
+# Redemptoristen
+gsord:Redemptoristen a skos:Concept;
+  skos:prefLabel "Congregatio Sanctissimi Redemptoris"@la, "Redemptoristen"@de, "Redemptorists"@en;
+  skos:altLabel "CSsR"@la, "Kongregation des heiligsten Erlösers"@de;
+  skos:definition "Ein Missionsorden, gegründet 1732 von Alfons M. de Liguori."@de;
+  skos:exactMatch <https://d-nb.info/gnd/2007048-2>;
+  skos:exactMatch <https://www.wikidata.org/wiki/Q751148>;
+  skos:exactMatch <https://database.factgrid.de/entity/Q640766>;
   skos:inScheme gsord:.
+
+# Lazaristen
+gsord:Lazaristen a skos:Concept;
+  skos:prefLabel "Congregatio Missionis"@la, "Knights of St Lazarus"@en, "Lazarieten"@nl, "Lazaristen"@de;
+  skos:altLabel "CM"@la, "Vinzentiner"@de;
+  skos:definition "Die Lazaristen sind eine Gemeinschaft apostolischen Lebens, gegründet 1625 von Vinzenz von Paul."@de;
+  skos:exactMatch <https://d-nb.info/gnd/1024069-X>;
+  skos:exactMatch <https://www.wikidata.org/wiki/Q849726>;
+  skos:exactMatch <https://database.factgrid.de/entity/Q1195226>;
+  skos:inScheme gsord:.
+
+# Augustinerchorfrauen BMV
+gsord:Augustinerchorfrauen_BMV a skos:Concept;
+  skos:prefLabel "Augustinerchorfrauen B.M.V."@de, "Congregatio Beatae Mariae Virginis"@la;
+  skos:altLabel "CBMV"@la, "Chorfrauen U. L. F."@de, "Kongregation der allerseligsten Jungfrau"@de, "Welschnonnen"@de;
+  skos:broader gsord:Augustinerchorfrauen;
+  skos:broader gsord:Orden_nach_der_Augustinusregel;
+  skos:inScheme gsord:.
+
+# Brudergemeinschaft (top concept)
+gsord:Brudergemeinschaft a skos:Concept;
+  skos:prefLabel "Broederschap"@nl, "Brudergemeinschaft"@de, "Fraternal orders"@en, "Fraternité"@fr;
+  skos:altLabel "Bruderschaft"@de;
+  skos:exactMatch <https://database.factgrid.de/entity/Q636405>;
+  skos:topConceptOf gsord:.
