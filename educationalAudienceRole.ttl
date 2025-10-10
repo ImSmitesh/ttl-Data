@@ -514,7 +514,7 @@ gsord:ac4ee55b-0660-481f-b905-d3d14f002ec4 a skos:Concept ;
  skos:definition "Der Templerorden geht auf Kreuzfahrer zurück, die sich in den 1120er Jahren zum bewaffneten Schutz der Jerusalempilger zu einer bruderschaftlichen Vereinigung zusammenschlossen. 1129 wurde seine Regel vom Konzil von Troyes beschlossen. Neben dem Heiligen Land errichtete der Orden auch zahlreiche Niederlassungen in Europa und diente der Verteidigung der Kreuzfahrerstaaten. Nach der Eroberung Jerusalems (1187) und dem Fall Akkos (1291) zogen sich die Templer zunächst auf die Insel Ruad, dann nach Zypern zurück. Auf dem Konzil von Vienne (1311-1312) wurde der Orden von Clemens V. aufgehoben. Die Besitzungen fielen größtenteils an den Johanniterorden."@de ;
  skos:inScheme gsord:.
 
-gsord:Kreuzherren vom Heiligen Kreuz a skos:Concept ;
+gsord:Kreuzherren_vom_Heiligen Kreuz a skos:Concept ;
  skos:notation "GSReligiousOrder141" ;
  skos:prefLabel "Kreuzherren vom Heiligen Kreuz"@de, "Croziers"@en, "Kruisheren"@nl, "Ordo Sanctae Crucis"@la ;
  skos:altLabel "Canons Regular of the Order of the Holy Cross"@en, "Kruisbroeders"@nl, "OSC"@la ;
