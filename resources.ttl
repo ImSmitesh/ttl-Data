@@ -1,39 +1,63 @@
 @prefix gsord: <https://gsord.germania-sacra.de/resources/> .
-@prefix dct: <http://purl.org/dc/terms/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-gsord: a skos:ConceptScheme;
-  dct:title "Germania Sacra: Wiag Religious Orders"@en;
-  dc:creator "Germania Sacra / Wiag Project"@en;
-  dct:description "A concept scheme for religious orders used in Germania Sacra and Wiag vocabularies."@en;
-  dct:license <https://creativecommons.org/licenses/by/4.0/>;
-  dct:language "de";
+gsord:a a skos:ConceptScheme;
+  dct:title "WIAG Ordensvokabular"@de;
+  dc:creator "WIAG Project Team"@de;
+  dct:description "Ein Vokabular für religiöse Orden und Gemeinschaften im Mittelalter."@de;
   dct:created "2025-10-10"^^xsd:date;
   dct:modified "2025-10-10"^^xsd:date;
+  dct:license <http://creativecommons.org/licenses/by/4.0/>;
   skos:hasTopConcept
-    gsord:a,
-    gsord:Alexianerinnen,
-    gsord:Kartaeuser.
+    gsord:Brudergemeinschaft,
+    gsord:Franziskanerorden,
+    gsord:Hospitaliterinnen,
+    gsord:Semireligiöse_W,
+    gsord:Kreuzherren,
+    gsord:Orden_nach_der_Benediktregel,
+    gsord:Orden_nach_der_Augustinusregel,
+    gsord:Regularkanoniker,
+    gsord:Semireligiöse_M,
+    gsord:Mendikantenorden,
+    gsord:Hospitaliter,
+    gsord:Kapuzinerinnen,
+    gsord:Barmherzige_Brueder.
 
-# Top Concept A
-gsord:a a skos:Concept;
-  skos:prefLabel "Religious Order A"@en;
+gsord:Coelestiner a skos:Concept;
+  skos:prefLabel "Celestines"@en, "Coelestiner"@de, "Ordo Sancti Benedicti Coelestinensis"@la;
+  skos:altLabel "Cölestiner"@de, "Damianisten"@de, "Einsiedler vom hl. Damian"@de, "OSBCoel"@la;
+  skos:definition "Bei den Cölestinern handelt es sich um eine vom hl. Pietro del Morrone, dem späteren Papst Coelestin V., gegründete monastische Kongregation nach der Benediktregel..."@de;
+  skos:broader gsord:Orden_nach_der_Benediktregel;
+  skos:related gsord:Coelestinerinnen;
+  skos:exactMatch <http://d-nb.info/gnd/4335315-0>;
+  skos:exactMatch <https://database.factgrid.de/wiki/Item:Q640742>;
+  skos:exactMatch <https://www.wikidata.org/wiki/Q1093546>;
+  skos:exactMatch <http://viaf.org/viaf/247807713>;
   skos:inScheme gsord:.
 
-# Alexianerinnen
-gsord:Alexianerinnen a skos:Concept;
-  skos:prefLabel "Alexianerinnen"@de;
-  skos:definition "A specific religious order within the Germania Sacra database."@en;
-  skos:broader gsord:a;
-  skos:related gsord:Kartaeuser;
+gsord:Kartäuser a skos:Concept;
+  skos:prefLabel "Carthusians"@en, "Kartuizers"@nl, "Kartäuser"@de, "Ordo Cartusiensis"@la;
+  skos:altLabel "OCart"@la;
+  skos:definition "Der Kartäuserorden geht auf den hl. Bruno von Köln zurück, der diesen strengen Reformorden 1084 gründete..."@de;
+  skos:broader gsord:Orden_nach_der_Benediktregel;
+  skos:related gsord:Kartäuserinnen;
+  skos:exactMatch <https://d-nb.info/gnd/1017943-4>;
+  skos:exactMatch <https://www.wikidata.org/wiki/Q220979>;
+  skos:exactMatch <http://vocab.getty.edu/page/aat/300148065>;
+  skos:exactMatch <https://database.factgrid.de/entity/Q394850>;
   skos:inScheme gsord:.
 
-# Kartäuser
-gsord:Kartaeuser a skos:Concept;
-  skos:prefLabel "Kartäuser"@de;
-  skos:definition "A specific monastic order within the Germania Sacra database."@en;
-  skos:broader gsord:a;
-  skos:related gsord:Alexianerinnen;
+gsord:Brueder_vom_gemeinsamen_Leben a skos:Concept;
+  skos:prefLabel "Brethren of the Common Life"@en, "Broeders des gemenen levens"@nl, "Brüder vom gemeinsamen Leben"@de, "Fratres communis vitae"@la;
+  skos:altLabel "CRVC"@la, "Fraterherren"@de, "Kugelherren"@de;
+  skos:broader gsord:Regularkanoniker;
+  skos:broader gsord:Semireligiöse_M;
+  skos:related gsord:Schwestern_vom_gemeinsamen_Leben;
+  skos:exactMatch <https://database.factgrid.de/entity/Q498922>;
+  skos:exactMatch <https://d-nb.info/gnd/4008437-1>;
   skos:inScheme gsord:.
