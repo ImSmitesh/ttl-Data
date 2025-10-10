@@ -46,6 +46,17 @@ gsord:Brueder_vom_gemeinsamen_Leben a skos:Concept ;
  skos:exactMatch <https://d-nb.info/gnd/4008437-1>;
  skos:inScheme gsord:.
 
+gsord:Alexianerinnen a skos:Concept ;
+ skos:notation "GSReligiousOrder101" ;
+ skos:prefLabel "Alexian Sisters"@en, "Cellezusters"@nl, "Cellitinnen"@de ;
+ skos:altLabel "Alexianerinnen"@de, "CFA (w)"@la, "Schwarze Schwestern"@de ;
+ skos:definition "Bei den Cellitinnen bzw. Alexianerinnen handelte es sich um eine weibliche Ordensgemeinschaft, die im späten Mittelalter aus der Beginenbewegung hervorgegangen ist. Wie auch der männliche Zweig lebten die Alexianerinnen gewöhnlich nach der Augustinusregel und widmeten sich vor allem der Krankenpflege. Zu ihrem Hauptverbreitungsgebiet zählen Belgien, die Niederlanden und das Rheinland."@de ;
+ skos:related gsord:Alexianer;
+ skos:broader gsord:Orden_nach_der_Augustinusregel ;
+ skos:exactMatch <https://d-nb.info/gnd/4212649-6> ;
+ skos:exactMatch <https://database.factgrid.de/entity/Q1195148> ;
+ skos:inScheme gsord:.
+
 gsord:Redemptoristen a skos:Concept ;
  skos:notation "GSReligiousOrder087" ;
  skos:prefLabel "Congregatio Sanctissimi Redemptoris"@la, "Redemptoristen"@de, "Redemptorists"@en ;
