@@ -1,38 +1,79 @@
-@prefix dc: <http://dublincore.org/elements/1.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix interact: <http://purl.org/dcx/lrmi-vocabs/interactivityType/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
-@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gsord: <https://gsord.germania-sacra.de/resources/> .
 
-interact: a skos:ConceptScheme ;
-    dct:title "LRMI Interact Type Vocabulary"@en ;
-    dc:creator "LRMI Task Group (DCMI)"@en ;
-    dct:description "A concept scheme that defines the predominate interact mode of the learning resource being described."@en ;
-    dct:source "Based on the IEEE Learning Object Metadata standard (IEEE/LOM - IEEE 1484.12.1-202)."@en ;
-    dct:created "2017-03-01"^^xsd:date ;
-    dct:modified "2017-12-20"^^xsd:date ;
+gsord: a skos:ConceptScheme ;
+    dct:title "WIAG Ordensvokabular"@de ;
+    dc:creator "Germania Sacra / WIAG project"@de ;
+    dct:description "Ein kontrolliertes Vokabular der geistlichen Orden im Rahmen der Germania Sacra (WIAG)."@de ;
+    dct:source "Based on historical and prosopographical research from the Germania Sacra project."@en ;
+    dct:created "2024-01-01"^^xsd:date ;
+    dct:modified "2025-01-01"^^xsd:date ;
     dct:license <http://creativecommons.org/licenses/by/4.0/> ;
-    skos:hasTopConcept interact:active, interact:expositive, interact:mixed .
+    skos:hasTopConcept 
+        gsord:Brudergemeinschaft,
+        gsord:Franziskanerorden,
+        gsord:Hospitaliterinnen,
+        gsord:Semireligiöse_W,
+        gsord:Kreuzherren,
+        gsord:Orden_nach_der_Benediktregel,
+        gsord:Orden_nach_der_Augustinusregel,
+        gsord:Regularkanoniker,
+        gsord:Semireligiöse_M,
+        gsord:Mendikantenorden,
+        gsord:Hospitaliter,
+        gsord:Kapuzinerinnen,
+        gsord:Barmherzige_Brueder .
 
-interact:active a skos:Concept ;
-    skos:prefLabel "active"@en ;
-    skos:definition "Learning that engages and challenges the learner's thinking using real-life and/or imaginary situations taking advantage of the opportunities for learning presented by investigating, exploring, events, and life experiences."@en ;
-    dct:source "Based on the IEEE Learning Object Metadata standard (IEEE 1484.12.1-202 (LOMv1.0))."@en ;
-    skos:inScheme interact: .
+# --- Concepts ---
 
-interact:expositive a skos:Concept ;
-    skos:prefLabel "expositive"@en ;
-    skos:definition "Use of a subject-matter expert to explain a concept or give clear and concise information in a purposeful way to the passive learner."@en ;
-    dct:source "Based on the IEEE Learning Object Metadata standard (IEEE 1484.12.1-202 (LOMv1.0))."@en ;
-    skos:inScheme interact: .
+gsord:Coelestiner a skos:Concept ;
+    skos:notation "GSReligiousOrder104" ;
+    skos:prefLabel "Celestines"@en, "Coelestiner"@de, "Ordo Sancti Benedicti Coelestinensis"@la ;
+    skos:altLabel "Cölestiner"@de, "Damianisten"@de, "Einsiedler vom hl. Damian"@de, "OSBCoel"@la ;
+    skos:definition "Bei den Cölestinern handelt es sich um eine vom hl. Pietro del Morrone, dem späteren Papst Coelestin V., gegründete monastische Kongregation nach der Benediktregel, deren Mitglieder ein eremitisches und einfaches Leben führten. Sie wurden 1263 durch Papst Urban IV. bestätigt."@de ;
+    skos:broader gsord:Orden_nach_der_Benediktregel ;
+    skos:related gsord:Coelestinerinnen ;
+    skos:exactMatch <http://d-nb.info/gnd/4335315-0>, <https://database.factgrid.de/entity/Q640742>, <https://www.wikidata.org/wiki/Q1093546>, <http://viaf.org/viaf/247807713> ;
+    skos:inScheme gsord: .
 
-interact:mixed a skos:Concept ;
-    skos:prefLabel "mixed"@en ;
-    skos:definition "Instructional interactions comprised of a mix of active learning and expositive approaches."@en ;
-    dct:source "Based on IEEE Learning Object Metadata standard (IEEE 1484.12.1-202 (LOMv1.0))."@en ;
-    skos:inScheme interact: .
+gsord:Kartaeuser a skos:Concept ;
+    skos:notation "GSReligiousOrder004" ;
+    skos:prefLabel "Carthusians"@en, "Kartäuser"@de, "Ordo Cartusiensis"@la ;
+    skos:altLabel "OCart"@la ;
+    skos:definition "Der Kartäuserorden geht auf den hl. Bruno von Köln (1032–1101) zurück, der diesen strengen Reformorden 1084 in der Nähe von Chartreuse gründete. Das Klosterleben der Kartäuser ist geprägt durch ein strenges Armuts- und Schweigegebot."@de ;
+    skos:broader gsord:Orden_nach_der_Benediktregel ;
+    skos:related gsord:Kartaeuserinnen ;
+    skos:exactMatch <https://d-nb.info/gnd/1017943-4>, <https://www.wikidata.org/wiki/Q220979>, <http://vocab.getty.edu/page/aat/300148065>, <https://database.factgrid.de/entity/Q394850> ;
+    skos:inScheme gsord: .
+
+gsord:Brueder_vom_gemeinsamen_Leben a skos:Concept ;
+    skos:notation "GSReligiousOrder046" ;
+    skos:prefLabel "Brethren of the Common Life"@en, "Brüder vom gemeinsamen Leben"@de, "Fratres communis vitae"@la ;
+    skos:altLabel "CRVC"@la, "Fraterherren"@de, "Kugelherren"@de ;
+    skos:broader gsord:Regularkanoniker, gsord:Semireligiöse_M ;
+    skos:related gsord:Schwestern_vom_gemeinsamen_Leben ;
+    skos:exactMatch <https://database.factgrid.de/entity/Q498922>, <https://d-nb.info/gnd/4008437-1> ;
+    skos:inScheme gsord: .
+
+gsord:Alexianerinnen a skos:Concept ;
+    skos:notation "GSReligiousOrder101" ;
+    skos:prefLabel "Alexian Sisters"@en, "Cellitinnen"@de, "Cellezusters"@nl ;
+    skos:altLabel "Alexianerinnen"@de, "CFA (w)"@la, "Schwarze Schwestern"@de ;
+    skos:definition "Bei den Cellitinnen bzw. Alexianerinnen handelte es sich um eine weibliche Ordensgemeinschaft, die im späten Mittelalter aus der Beginenbewegung hervorgegangen ist."@de ;
+    skos:related gsord:Alexianer ;
+    skos:broader gsord:Orden_nach_der_Augustinusregel ;
+    skos:exactMatch <https://d-nb.info/gnd/4212649-6>, <https://database.factgrid.de/entity/Q1195148> ;
+    skos:inScheme gsord: .
+
+gsord:Redemptoristen a skos:Concept ;
+    skos:notation "GSReligiousOrder087" ;
+    skos:prefLabel "Congregatio Sanctissimi Redemptoris"@la, "Redemptoristen"@de, "Redemptorists"@en ;
+    skos:altLabel "CSsR"@la, "Kongregation des heiligsten Erlösers"@de ;
+    skos:definition "Bei den Redemptoristen handelt es sich um einen Missionsorden, der 1732 in Scala (Königreich Neapel) von dem italienischen Theologen Alfons M. de Liguori gegründet wurde."@de ;
+    skos:exactMatch <https://d-nb.info/gnd/2007048-2>, <https://www.wikidata.org/wiki/Q751148>, <https://database.factgrid.de/entity/Q640766> ;
+    skos:inScheme gsord: .
