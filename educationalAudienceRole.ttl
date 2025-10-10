@@ -4,6 +4,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix gsord: <https://gsord.germania-sacra.de/resources/> .
 
+# Concept Scheme
 <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/>
     a skos:ConceptScheme ;
     skos:prefLabel "Germania Sacra: Wiag Religious Orders"@en ;
@@ -15,24 +16,27 @@
     vann:preferredNamespaceUri "https://gsord.germania-sacra.de/resources/" ;
     skos:hasTopConcept gsord:a, gsord:Alexianerinnen, gsord:Kartaeuser .
 
-# Example top concept
+# Top Concept A
 gsord:a
     a skos:Concept ;
     skos:prefLabel "Religious Order A"@en ;
-    skos:inScheme <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> .
+    skos:inScheme <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> ;
+    skos:topConceptOf <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> .
 
-# Example concept: Alexianerinnen
+# Concept: Alexianerinnen
 gsord:Alexianerinnen
     a skos:Concept ;
     skos:prefLabel "Alexianerinnen"@de ;
     skos:broader gsord:a ;
     skos:inScheme <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> ;
-    skos:related gsord:Kartaeuser .
+    skos:related gsord:Kartaeuser ;
+    skos:topConceptOf <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> .
 
-# Example concept: Kartäuser
+# Concept: Kartäuser
 gsord:Kartaeuser
     a skos:Concept ;
     skos:prefLabel "Kartäuser"@de ;
     skos:broader gsord:a ;
     skos:inScheme <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> ;
-    skos:related gsord:Alexianerinnen .
+    skos:related gsord:Alexianerinnen ;
+    skos:topConceptOf <http://uri.gbv.de/terminology/germania_sacra_wiag_orden/> .
