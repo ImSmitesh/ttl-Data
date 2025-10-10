@@ -53,7 +53,7 @@ gsord:Alexianerinnen a skos:Concept ;
  skos:definition "Bei den Cellitinnen bzw. Alexianerinnen handelte es sich um eine weibliche Ordensgemeinschaft, die im späten Mittelalter aus der Beginenbewegung hervorgegangen ist. Wie auch der männliche Zweig lebten die Alexianerinnen gewöhnlich nach der Augustinusregel und widmeten sich vor allem der Krankenpflege. Zu ihrem Hauptverbreitungsgebiet zählen Belgien, die Niederlanden und das Rheinland."@de ;
  skos:related gsord:Alexianer;
  skos:broader gsord:Orden_nach_der_Augustinusregel ;
- skos:exactMatch <https://d-nb.info/gnd/4212649-6 ;
+ skos:exactMatch <https://d-nb.info/gnd/4212649-6> ;
  skos:exactMatch <https://database.factgrid.de/entity/Q1195148> ;
  skos:inScheme gsord:.
 
