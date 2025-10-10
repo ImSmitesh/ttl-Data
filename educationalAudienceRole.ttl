@@ -483,7 +483,7 @@ gsord:a55c03bf-e272-4d31-bc6f-c896defefc24 a skos:Concept ;
  skos:prefLabel "Magdalenen"@nl, "Magdalenerinnen"@de, "Magdalenes"@en ;
  skos:altLabel "Magdalenazusters"@nl, "Order of St Mary Magdalene"@en, "Reuerinnen"@de, "Sorores poenitentes"@la, "Weißfrauen"@de ;
  skos:definition "Die Magdalenerinnen sind ein Frauenorden, der aus der Bußbewegung des 13. Jahrhunderts hervorging und angeblich unsittlich lebende Frauen zu Buße und christlichem Lebenswandel führen wollte. Als Gründer der Magdalenerinnen gilt Rudolf von Worms, der in den 1220er Jahren in Worms das erste Kloster dieses Ordens gründete. Nach der Bestätigung 1227 durch Gregor IX. kam es zu weiteren Klostergründungen unter der Benediktregel. 1232 verpflichtete derselbe die Klöster auf die Augustinusregel und die Statuten der Dominikanerinnen von S. Sisto in Rom. Die größte Ausbreitung des Ordens der Magdalenerinnen fand im 13. Jahrhundert statt; schnell traten freiwillig büßende Frauen in den Orden ein und er glich mehr und mehr einem traditionellen Frauenorden. Die Reformation beschleunigte den Auflösungsprozess, der durch die Säkularisation abgeschlossen wurde. Lediglich Kloster Lauban in Niederschlesien blieb bestehen."@de ;
- skos:broader gsord:Orden_nach_der_Benediktregel
+ skos:broader gsord:Orden_nach_der_Benediktregel ;
  skos:inScheme gsord:.
 
 gsord:a6a3d685-893a-4aa6-8d2c-c858708bd23d a skos:Concept ;
