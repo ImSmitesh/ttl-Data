@@ -65,7 +65,7 @@ gsord:Redemptoristen a skos:Concept ;
  skos:exactMatch <https://d-nb.info/gnd/2007048-2> ;
  skos:exactMatch <https://www.wikidata.org/wiki/Q751148> ;
  skos:exactMatch <https://database.factgrid.de/entity/Q640766> ;
- skos:inScheme gsord:.
+ skos:inScheme gsord: .
 
 gsord:Lazaristen a skos:Concept ;
  skos:notation "GSReligiousOrder080" ;
