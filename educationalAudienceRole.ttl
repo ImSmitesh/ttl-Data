@@ -304,7 +304,7 @@ gsord:Orden_nach_der_Benediktregel a skos:Concept ;
  skos:exactMatch <https://database.factgrid.de/entity/Q1193844> ;
  skos:topConceptOf gsord:.
 
-gsord:Böhmische_Kreuzherren a skos:Concept ;
+gsord:Boehmische_Kreuzherren a skos:Concept ;
  skos:notation "GSReligiousOrder150" ;
  skos:prefLabel "Böhmische Kreuzherren"@de, "Knights of the Cross with the Red Star"@en, "Orde van het Kruis met de Rode Ster"@nl, "Ordo militaris Crucigerorum cum rubea stella"@la ;
  skos:altLabel "Kreuzherren mit dem roten Stern"@de ;
