@@ -127,8 +127,3 @@ gsord:Maricollen a skos:Concept ;
  skos:exactMatch <https://d-nb.info/gnd/4542342-8>;
  skos:related gsord:Karmeliterinnen;
  skos:inScheme gsord:.
-
-
- skos:altLabel "Augustijner Koorvrouwen"@nl, "CRSA"@la, "CanA (w)"@la, "Regularissen"@de, "Regularkanonissen"@de, "Reguliere kanunnikessen"@nl, "Regulierte Chorfrauen vom hl. Augustinus"@de ;
- skos:definition "Die nach der Augustinusregel lebenden Augustinerchorfrauen entstanden im 11. Jahrhundert und lebten anfangs ausschließlich in Doppelkonventen mit Augustinerchorherren, bevor ab den 1120er Jahren auch unabhängige Stifte entstanden. Gerade im Mittelalter gab es eine große Diversität in den Lebensformen der Augustinerchorfrauen, die kanonikale, regular-kanonikale und monastische Elemente umfassen konnten; allerdings waren die Augustinerchorfrauen weniger strengen Regeln unterworfen als die Angehörigen monastischer Gemeinschaften. Blütezeit im Hochmittelalter und Aufschwung im Zuge der Windesheimer Kongregation."@de ;
- skos:inScheme gsord:.
