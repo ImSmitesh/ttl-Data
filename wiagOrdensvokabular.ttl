@@ -6,6 +6,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+# ConceptScheme
 gsord: a skos:ConceptScheme ;
     dct:title "WIAG Ordensvokabular"@de ;
     dc:creator "WIAG Project"@de ;
@@ -16,6 +17,7 @@ gsord: a skos:ConceptScheme ;
     dct:license <http://creativecommons.org/licenses/by/4.0/> ;
     skos:hasTopConcept gsord:Coelestiner, gsord:Kartäuser, gsord:Brueder_vom_gemeinsamen_Leben, gsord:Alexianerinnen, gsord:Redemptoristen .
 
+# Top Concepts
 gsord:Coelestiner a skos:Concept ;
     skos:prefLabel "Celestines"@en, "Coelestiner"@de, "Ordo Sancti Benedicti Coelestinensis"@la ;
     skos:altLabel "Cölestiner"@de, "Damianisten"@de, "Einsiedler vom hl. Damian"@de, "OSBCoel"@la ;
@@ -67,4 +69,37 @@ gsord:Redemptoristen a skos:Concept ;
     skos:exactMatch <https://d-nb.info/gnd/2007048-2> ;
     skos:exactMatch <https://www.wikidata.org/wiki/Q751148> ;
     skos:exactMatch <https://database.factgrid.de/entity/Q640766> ;
+    skos:inScheme gsord: .
+
+# Minimal placeholder concepts to satisfy SHACL validation
+gsord:Regularkanoniker a skos:Concept ;
+    skos:prefLabel "Regularkanoniker"@de ;
+    skos:inScheme gsord: .
+
+gsord:Semireligiöse_M a skos:Concept ;
+    skos:prefLabel "Semireligiöse Männer"@de ;
+    skos:inScheme gsord: .
+
+gsord:Schwestern_vom_gemeinsamen_Leben a skos:Concept ;
+    skos:prefLabel "Schwestern vom gemeinsamen Leben"@de ;
+    skos:inScheme gsord: .
+
+gsord:Coelestinerinnen a skos:Concept ;
+    skos:prefLabel "Coelestinerinnen"@de ;
+    skos:inScheme gsord: .
+
+gsord:Kartäuserinnen a skos:Concept ;
+    skos:prefLabel "Kartäuserinnen"@de ;
+    skos:inScheme gsord: .
+
+gsord:Alexianer a skos:Concept ;
+    skos:prefLabel "Alexianer"@de ;
+    skos:inScheme gsord: .
+
+gsord:Orden_nach_der_Benediktregel a skos:Concept ;
+    skos:prefLabel "Orden nach der Benediktregel"@de ;
+    skos:inScheme gsord: .
+
+gsord:Orden_nach_der_Augustinusregel a skos:Concept ;
+    skos:prefLabel "Orden nach der Augustinusregel"@de ;
     skos:inScheme gsord: .
