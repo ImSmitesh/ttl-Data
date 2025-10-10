@@ -128,12 +128,12 @@ gsord:Maricollen a skos:Concept ;
  skos:related gsord:Karmeliterinnen;
  skos:inScheme gsord:.
 
-gsord:Hospitaliterinnen a skos:Concept;
+gsord:Hospitaliterinnen a skos:Concept ;
  skos:notation "GSReligiousOrder124" ;
  skos:prefLabel "Hospitaalzusters"@nl, "Hospital Sisters"@en, "Hospitaliterinnen"@de, "Ordo hospitaliarii"@la ;
  skos:definition "Hospitaliterinnen ist eine Sammelbezeichnung für die Ordensgemeinschaften von Frauen, die sich der Krankenpflege widmeten. Im Mittelalter gab es etwa eine Vielzahl von Frauengemeinschaften, die in Hospitälern Dienst taten und nach Ordensregeln (für gewöhnlich Augustinusregel) lebten. In der Frühen Neuzeit schlossen diese sich häufiger überörtlichen Kongregationen zusammen."@de ;
- skos:related gsord:Hospitaliter;
- skos:exactMatch <https://database.factgrid.de/entity/Q640744>;
+ skos:related gsord:Hospitaliter ;
+ skos:exactMatch <https://database.factgrid.de/entity/Q640744> ;
  skos:topConceptOf gsord:.
 
 gsord:Coelestinerinnen a skos:Concept ;
